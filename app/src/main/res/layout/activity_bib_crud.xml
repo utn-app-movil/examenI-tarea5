@@ -1,0 +1,116 @@
+<!-- activity_bib_crud.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reservation_crud_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:id="@+id/reservation_crud_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_rounded_white"
+        android:padding="24dp"
+        android:elevation="4dp">
+
+        <!-- Student Name -->
+        <EditText
+            android:id="@+id/bib_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bib_student_name_hint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/primaryColor"
+            android:textColorHint="#546E7A" />
+
+        <!-- Book Code -->
+        <EditText
+            android:id="@+id/bib_book_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bib_book_code_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/primaryColor"
+            android:textColorHint="#546E7A" />
+
+        <!-- Book Name -->
+        <EditText
+            android:id="@+id/bib_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bib_book_name_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/primaryColor"
+            android:textColorHint="#546E7A" />
+
+        <!-- Reservation Date -->
+        <EditText
+            android:id="@+id/bib_reservation_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/bib_reservation_date_hint"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/primaryColor"
+            android:textColorHint="#546E7A" />
+
+        <!-- Return Date -->
+        <EditText
+            android:id="@+id/bib_return_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/bib_return_date_hint"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/primaryColor"
+            android:textColorHint="#546E7A" />
+
+        <!-- Library Location -->
+        <EditText
+            android:id="@+id/bib_library_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bib_library_location_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/primaryColor"
+            android:textColorHint="#546E7A" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/bib_btn_save_reservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bib_save"
+            android:background="@drawable/bg_button_primary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:minHeight="48dp" />
+
+        <ImageView
+            android:id="@+id/bib_reservation_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder_image" />
+
+        <!-- Botón para seleccionar o tomar foto -->
+        <Button
+            android:id="@+id/bib_btn_select_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bib_select_photo"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+</ScrollView>

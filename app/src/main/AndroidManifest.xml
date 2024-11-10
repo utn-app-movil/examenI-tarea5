@@ -46,6 +46,7 @@
         <activity
             android:name=".farListLayout"
             android:exported="false"/>
+        <!-- Farmacia_Daniel -->
         <activity
             android:name=".cap_MainActivity"
             android:exported="false" />
@@ -69,6 +70,15 @@
             android:exported="false" />
         <activity
             android:name=".cit_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bib_Lista"
+            android:exported="false" />
+        <activity
+            android:name=".bib_CRUD"
+            android:exported="false" />
+        <activity
+            android:name=".bib_MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

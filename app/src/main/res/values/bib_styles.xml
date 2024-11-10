@@ -1,0 +1,13 @@
+<resources>
+    <!-- Estilo de ítems del menú -->
+    <style name="CustomMenuItemStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:textColor">#FFFFFF</item> <!-- Color del texto de menú -->
+        <item name="android:background">?attr/selectableItemBackground</item> <!-- Fondo con efecto táctil -->
+        <item name="android:textSize">16sp</item> <!-- Tamaño de texto -->
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!-- Colores para el menú -->
+    <color name="menuIconColor">#FFFFFF</color> <!-- Color de los íconos -->
+    <color name="menuBackground">#6200EE</color> <!-- Color de fondo del menú -->
+</resources>
