@@ -21,7 +21,7 @@
         tools:targetApi="34">
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.provider"
+            android:authorities="cr.ac.utn.movil.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -37,16 +37,19 @@
             android:exported="false"
             android:parentActivityName=".cap_MainActivity"/>
         <!-- Farmacia_Daniel -->
-        <activity
-            android:name=".far_MainActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".far_adding_patient"
-            android:exported="false"/>
-        <activity
-            android:name=".farListLayout"
-            android:exported="false"/>
-        <!-- Farmacia_Daniel -->
+
+        <!--
+       <activity
+           android:name=".far_MainActivity"
+           android:exported="false"/>
+           -->
+       <activity
+           android:name=".far_adding_patient"
+           android:exported="false"/>
+       <activity
+           android:name=".farListLayout"
+           android:exported="false"/>
+       <!-- Farmacia_Daniel -->
         <activity
             android:name=".cap_MainActivity"
             android:exported="false" />
@@ -81,7 +84,7 @@
             android:name=".bib_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".far_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
