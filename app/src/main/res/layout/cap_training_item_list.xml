@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Nombre Completo -->
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cap_lbItemFullName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <TextView
+                android:id="@+id/cap_lbItemCourseCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView "
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cap_lbItemDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="146dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/cap_imgItemPhoto"
+            tools:srcCompat="@drawable/cap_img"
+            android:layout_width="match_parent"
+            android:contentDescription="@string/cap_TrainingPhoto"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</LinearLayout>
