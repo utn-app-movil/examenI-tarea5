@@ -14,7 +14,10 @@ class bib_Reservation(
     photoUri: String
 ) : Identifier() {
 
-    override var Id: String = id
+    init {
+        this.Id = id
+    }
+
     var StudentName: String = studentName
     var BookCode: String = bookCode
     var BookName: String = bookName
