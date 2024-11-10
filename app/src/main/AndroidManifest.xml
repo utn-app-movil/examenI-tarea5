@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +16,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
+        <activity
+            android:name=".bib_ReservationAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".bib_Lista"
+            android:exported="false" />
+        <activity
+            android:name=".bib_CRUD"
+            android:exported="false" />
         <activity
             android:name=".cen_MainActivity"
             android:exported="false" />
@@ -30,7 +41,7 @@
             android:name=".cit_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".bib_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,6 +49,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>
