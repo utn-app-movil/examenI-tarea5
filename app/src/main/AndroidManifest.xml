@@ -5,9 +5,12 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -19,14 +22,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/sin_file_paths" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sin_ListaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sin_CRUD"
+            android:exported="false" />
         <activity
             android:name=".cap_AddActivity"
             android:exported="false"
-            android:parentActivityName=".cap_MainActivity"/>
+            android:parentActivityName=".cap_MainActivity" />
         <activity
             android:name=".cap_ListActivity"
             android:exported="false"
-            android:parentActivityName=".cap_MainActivity"/>
+            android:parentActivityName=".cap_MainActivity" />
         <activity
             android:name=".cap_MainActivity"
             android:exported="false" />
@@ -46,7 +69,7 @@
             android:name=".cit_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".sin_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
