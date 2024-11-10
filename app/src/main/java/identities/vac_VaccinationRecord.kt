@@ -1,6 +1,5 @@
 package identities
 
-import identities.Identifier
 import java.util.Date
 
 class vac_VaccinationRecord(
@@ -17,7 +16,10 @@ class vac_VaccinationRecord(
     photoUri: String
 ) : Identifier() {
 
-    override var Id: String = id
+    init {
+        Id = id
+    }
+
     var Name: String = name
     var LastName: String = lastName
     var Phone: Int = phone
