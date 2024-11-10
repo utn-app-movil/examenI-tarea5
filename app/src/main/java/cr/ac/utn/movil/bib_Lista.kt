@@ -28,7 +28,7 @@ class bib_Lista : AppCompatActivity() {
             if (!reservation.Id.isNullOrEmpty()) {
                 util.openActivity(this, bib_CRUD::class.java, EXTRA_MESSAGE_ID, reservation.Id)
             } else {
-                Toast.makeText(this, getString(R.string.reservation_no_valid_id), Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.bib_reservation_no_valid_id), Toast.LENGTH_SHORT).show()
             }
         }
 

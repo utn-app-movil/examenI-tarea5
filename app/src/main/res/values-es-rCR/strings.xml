@@ -23,41 +23,41 @@
     <string name="bib_return_date_hint">Fecha de Devolución (AAAA-MM-DD)</string>
     <string name="bib_library_location_hint">Ubicación de la Biblioteca</string>
 
-    <string name="reservation_saved">¡Reserva guardada!</string>
-    <string name="reservation_updated">¡Reserva actualizada!</string>
-    <string name="reservation_deleted">¡Reserva eliminada!</string>
-    <string name="reservation_not_found">¡Reserva no encontrada!</string>
-    <string name="reservation_duplicate">¡Reserva duplicada!</string>
-    <string name="invalid_date_format">Formato de fecha incorrecto</string>
+    <string name="bib_reservation_saved">¡Reserva guardada!</string>
+    <string name="bib_reservation_updated">¡Reserva actualizada!</string>
+    <string name="bib_reservation_deleted">¡Reserva eliminada!</string>
+    <string name="bib_reservation_not_found">¡Reserva no encontrada!</string>
+    <string name="bib_reservation_duplicate">¡Reserva duplicada!</string>
+    <string name="bib_invalid_date_format">Formato de fecha incorrecto</string>
 
-    <string name="error_student_name">El nombre del estudiante es obligatorio</string>
-    <string name="error_book_code">El código del libro es obligatorio</string>
-    <string name="error_book_name">El nombre del libro es obligatorio</string>
-    <string name="error_library_location">La ubicación de la biblioteca es obligatoria</string>
-    <string name="error_return_date">La fecha de devolución debe ser posterior a la fecha de reserva</string>
+    <string name="bib_error_student_name">El nombre del estudiante es obligatorio</string>
+    <string name="bib_error_book_code">El código del libro es obligatorio</string>
+    <string name="bib_error_book_name">El nombre del libro es obligatorio</string>
+    <string name="bib_error_library_location">La ubicación de la biblioteca es obligatoria</string>
+    <string name="bib_error_return_date">La fecha de devolución debe ser posterior a la fecha de reserva</string>
 
-    <string name="update_button_text">Actualizar</string>
+    <string name="bib_update_button_text">Actualizar</string>
 
     <string name="bib_title">Reservas de Biblioteca</string>
     <string name="bib_view_reservations">Ver Reservas</string>
     <string name="bib_add_new_reservation">Añadir Nueva Reserva</string>
     <string name="bib_select_photo">Seleccionar Foto</string>
 
-    <string name="reservation_no_valid_id">La reserva no tiene un ID válido</string>
-    <string name="permissions_required">Se requieren permisos para continuar</string>
-    <string name="permission_denied">Permiso denegado: %1$s</string>
+    <string name="bib_reservation_no_valid_id">La reserva no tiene un ID válido</string>
+    <string name="bib_permissions_required">Se requieren permisos para continuar</string>
+    <string name="bib_permission_denied">Permiso denegado: %1$s</string>
 
-    <string name="choose_option">Elige una opción</string>
-    <string name="select_from_gallery">Seleccionar de la galería</string>
-    <string name="take_photo">Tomar foto</string>
+    <string name="bib_choose_option">Elige una opción</string>
+    <string name="bib_select_from_gallery">Seleccionar de la galería</string>
+    <string name="bib_take_photo">Tomar foto</string>
 
-    <string name="camera_permission_not_granted">Permiso de cámara no concedido</string>
-    <string name="read_media_permission_not_granted">Permiso para leer imágenes no concedido</string>
-    <string name="read_storage_permission_not_granted">Permiso para leer almacenamiento externo no concedido</string>
-    <string name="requesting_permissions">Solicitando permisos: %1$s</string>
-    <string name="all_permissions_granted">Todos los permisos concedidos</string>
-    <string name="loading_reservation">Cargando reserva con ID: %1$s</string>
-    <string name="getting_reservation">Obteniendo reserva con ID: %1$s - Resultado: %2$s</string>
-    <string name="reservation_not_found2">No se encontró la reserva con ID: %1$s</string>
+    <string name="bib_camera_permission_not_granted">Permiso de cámara no concedido</string>
+    <string name="bib_read_media_permission_not_granted">Permiso para leer imágenes no concedido</string>
+    <string name="bib_read_storage_permission_not_granted">Permiso para leer almacenamiento externo no concedido</string>
+    <string name="bib_requesting_permissions">Solicitando permisos: %1$s</string>
+    <string name="bib_all_permissions_granted">Todos los permisos concedidos</string>
+    <string name="bib_loading_reservation">Cargando reserva con ID: %1$s</string>
+    <string name="bib_getting_reservation">Obteniendo reserva con ID: %1$s - Resultado: %2$s</string>
+    <string name="bib_reservation_not_found2">No se encontró la reserva con ID: %1$s</string>
 </resources>
 

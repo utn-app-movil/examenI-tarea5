@@ -110,14 +110,14 @@ class bib_CRUD : AppCompatActivity() {
                 val isGranted = permission.value
                 if (!isGranted) {
                     allPermissionsGranted = false
-                    Toast.makeText(this, getString(R.string.permission_denied, permission.key), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.bib_permission_denied, permission.key), Toast.LENGTH_SHORT).show()
                 }
             }
 
             if (allPermissionsGranted) {
                 showImageSelectionDialog()
             } else {
-                Toast.makeText(this, getString(R.string.permissions_required), Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.bib_permissions_required), Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -127,35 +127,35 @@ class bib_CRUD : AppCompatActivity() {
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             permissions.add(Manifest.permission.CAMERA)
-            Log.d("Permissions", getString(R.string.camera_permission_not_granted))
+            Log.d("Permissions", getString(R.string.bib_camera_permission_not_granted))
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_MEDIA_IMAGES) != PackageManager.PERMISSION_GRANTED) {
                 permissions.add(Manifest.permission.READ_MEDIA_IMAGES)
-                Log.d("Permissions", getString(R.string.read_media_permission_not_granted))
+                Log.d("Permissions", getString(R.string.bib_read_media_permission_not_granted))
             }
         } else {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
                 permissions.add(Manifest.permission.READ_EXTERNAL_STORAGE)
-                Log.d("Permissions", getString(R.string.read_storage_permission_not_granted))
+                Log.d("Permissions", getString(R.string.bib_read_storage_permission_not_granted))
             }
         }
 
         if (permissions.isNotEmpty()) {
-            Log.d("Permissions", getString(R.string.requesting_permissions, permissions.toString()))
+            Log.d("Permissions", getString(R.string.bib_requesting_permissions, permissions.toString()))
             requestPermissionLauncher.launch(permissions.toTypedArray())
         } else {
-            Log.d("Permissions", getString(R.string.all_permissions_granted))
+            Log.d("Permissions", getString(R.string.bib_all_permissions_granted))
             showImageSelectionDialog()
         }
     }
 
 
     private fun showImageSelectionDialog() {
-        val options = arrayOf(getString(R.string.select_from_gallery), getString(R.string.take_photo))
+        val options = arrayOf(getString(R.string.bib_select_from_gallery), getString(R.string.bib_take_photo))
         val builder = AlertDialog.Builder(this)
-        builder.setTitle(getString(R.string.choose_option))
+        builder.setTitle(getString(R.string.bib_choose_option))
         builder.setItems(options) { _, which ->
             when (which) {
                 0 -> selectImageFromGallery()
@@ -234,19 +234,19 @@ class bib_CRUD : AppCompatActivity() {
             if (validateData(reservation)) {
                 if (!isEditionMode) {
                     if (isDuplicate(reservation)) {
-                        Toast.makeText(this, getString(R.string.reservation_duplicate), Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, getString(R.string.bib_reservation_duplicate), Toast.LENGTH_LONG).show()
                         return
                     }
                     reservationModel.addReservation(reservation)
-                    Toast.makeText(this, getString(R.string.reservation_saved), Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, getString(R.string.bib_reservation_saved), Toast.LENGTH_LONG).show()
                 } else {
                     reservationModel.updateReservation(reservation)
-                    Toast.makeText(this, getString(R.string.reservation_updated), Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, getString(R.string.bib_reservation_updated), Toast.LENGTH_LONG).show()
                 }
                 finish()
             }
         } catch (e: ParseException) {
-            Toast.makeText(this, getString(R.string.invalid_date_format), Toast.LENGTH_LONG).show()
+            Toast.makeText(this, getString(R.string.bib_invalid_date_format), Toast.LENGTH_LONG).show()
         } catch (e: Exception) {
             Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
@@ -255,23 +255,23 @@ class bib_CRUD : AppCompatActivity() {
     private fun validateData(reservation: bib_Reservation): Boolean {
         return when {
             reservation.StudentName.isBlank() -> {
-                txtStudentName.error = getString(R.string.error_student_name)
+                txtStudentName.error = getString(R.string.bib_error_student_name)
                 false
             }
             reservation.BookCode.isBlank() -> {
-                txtBookCode.error = getString(R.string.error_book_code)
+                txtBookCode.error = getString(R.string.bib_error_book_code)
                 false
             }
             reservation.BookName.isBlank() -> {
-                txtBookName.error = getString(R.string.error_book_name)
+                txtBookName.error = getString(R.string.bib_error_book_name)
                 false
             }
             reservation.LibraryLocation.isBlank() -> {
-                txtLibraryLocation.error = getString(R.string.error_library_location)
+                txtLibraryLocation.error = getString(R.string.bib_error_library_location)
                 false
             }
             reservation.ReservationDate.after(reservation.ReturnDate) -> {
-                txtReturnDate.error = getString(R.string.error_return_date)
+                txtReturnDate.error = getString(R.string.bib_error_return_date)
                 false
             }
             else -> true
@@ -290,13 +290,13 @@ class bib_CRUD : AppCompatActivity() {
     private fun deleteReservation() {
         reservationId?.let {
             reservationModel.removeReservation(it)
-            Toast.makeText(this, getString(R.string.reservation_deleted), Toast.LENGTH_LONG).show()
+            Toast.makeText(this, getString(R.string.bib_reservation_deleted), Toast.LENGTH_LONG).show()
             finish()
-        } ?: Toast.makeText(this, getString(R.string.reservation_not_found), Toast.LENGTH_LONG).show()
+        } ?: Toast.makeText(this, getString(R.string.bib_reservation_not_found), Toast.LENGTH_LONG).show()
     }
 
     private fun loadReservation(id: String) {
-        Log.d("bib_CRUD", getString(R.string.loading_reservation, id))
+        Log.d("bib_CRUD", getString(R.string.bib_loading_reservation, id))
         val reservation = reservationModel.getReservation(id)
         if (reservation != null) {
             txtStudentName.setText(reservation.StudentName)
@@ -311,10 +311,10 @@ class bib_CRUD : AppCompatActivity() {
                 imgReservationPhoto.setImageURI(uri)
             }
             isEditionMode = true
-            btnSaveReservation.text = getString(R.string.update_button_text)
+            btnSaveReservation.text = getString(R.string.bib_update_button_text)
         } else {
-            Log.d("bib_CRUD", getString(R.string.reservation_not_found2, id))
-            Toast.makeText(this, getString(R.string.reservation_not_found2, id), Toast.LENGTH_LONG).show()
+            Log.d("bib_CRUD", getString(R.string.bib_reservation_not_found2, id))
+            Toast.makeText(this, getString(R.string.bib_reservation_not_found2, id), Toast.LENGTH_LONG).show()
         }
     }
 

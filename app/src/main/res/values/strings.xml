@@ -22,40 +22,40 @@
     <string name="bib_return_date">Return Date</string>
     <string name="bib_library_location">Library Location</string>
 
-    <string name="reservation_saved">Reservation saved!</string>
-    <string name="reservation_updated">Reservation updated!</string>
-    <string name="reservation_deleted">Reservation deleted!</string>
-    <string name="reservation_not_found">Reservation not found!</string>
-    <string name="reservation_duplicate">Duplicate reservation!</string>
-    <string name="invalid_date_format">Invalid date format</string>
+    <string name="bib_reservation_saved">Reservation saved!</string>
+    <string name="bib_reservation_updated">Reservation updated!</string>
+    <string name="bib_reservation_deleted">Reservation deleted!</string>
+    <string name="bib_reservation_not_found">Reservation not found!</string>
+    <string name="bib_reservation_duplicate">Duplicate reservation!</string>
+    <string name="bib_invalid_date_format">Invalid date format</string>
 
-    <string name="error_student_name">Student name is required</string>
-    <string name="error_book_code">Book code is required</string>
-    <string name="error_book_name">Book name is required</string>
-    <string name="error_library_location">Library location is required</string>
-    <string name="error_return_date">Return date must be after the reservation date</string>
+    <string name="bib_error_student_name">Student name is required</string>
+    <string name="bib_error_book_code">Book code is required</string>
+    <string name="bib_error_book_name">Book name is required</string>
+    <string name="bib_error_library_location">Library location is required</string>
+    <string name="bib_error_return_date">Return date must be after the reservation date</string>
 
-    <string name="update_button_text">Update</string>
+    <string name="bib_update_button_text">Update</string>
 
     <string name="bib_title">Library Reservations</string>
     <string name="bib_view_reservations">View Reservations</string>
     <string name="bib_add_new_reservation">Add New Reservation</string>
     <string name="bib_select_photo">Select Photo</string>
 
-    <string name="reservation_no_valid_id">The reservation does not have a valid ID</string>
-    <string name="permissions_required">Permissions are required to proceed</string>
-    <string name="permission_denied">Permission denied: %1$s</string>
+    <string name="bib_reservation_no_valid_id">The reservation does not have a valid ID</string>
+    <string name="bib_permissions_required">Permissions are required to proceed</string>
+    <string name="bib_permission_denied">Permission denied: %1$s</string>
 
-    <string name="choose_option">Choose an option</string>
-    <string name="select_from_gallery">Select from Gallery</string>
-    <string name="take_photo">Take Photo</string>
+    <string name="bib_choose_option">Choose an option</string>
+    <string name="bib_select_from_gallery">Select from Gallery</string>
+    <string name="bib_take_photo">Take Photo</string>
 
-    <string name="camera_permission_not_granted">Camera permission not granted</string>
-    <string name="read_media_permission_not_granted">Read media images permission not granted</string>
-    <string name="read_storage_permission_not_granted">Read external storage permission not granted</string>
-    <string name="requesting_permissions">Requesting permissions: %1$s</string>
-    <string name="all_permissions_granted">All permissions granted</string>
-    <string name="loading_reservation">Loading reservation with ID: %1$s</string>
-    <string name="getting_reservation">Getting reservation with ID: %1$s - Result: %2$s</string>
-    <string name="reservation_not_found2">No reservation found with ID: %1$s</string>
+    <string name="bib_camera_permission_not_granted">Camera permission not granted</string>
+    <string name="bib_read_media_permission_not_granted">Read media images permission not granted</string>
+    <string name="bib_read_storage_permission_not_granted">Read external storage permission not granted</string>
+    <string name="bib_requesting_permissions">Requesting permissions: %1$s</string>
+    <string name="bib_all_permissions_granted">All permissions granted</string>
+    <string name="bib_loading_reservation">Loading reservation with ID: %1$s</string>
+    <string name="bib_getting_reservation">Getting reservation with ID: %1$s - Result: %2$s</string>
+    <string name="bib_reservation_not_found2">No reservation found with ID: %1$s</string>
 </resources>
