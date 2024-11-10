@@ -226,7 +226,7 @@ class far_adding_patient : AppCompatActivity() {
         btnAdding.isEnabled = true
         menuItemDelete.setVisible(false)
         isEditionMode = false
-        temporaryListOfMedicine.clear()
+        temporaryListOfMedicineS = ""
     }
 
     private fun far_moreDetails(){
@@ -316,8 +316,8 @@ class far_adding_patient : AppCompatActivity() {
 
         temporaryListOfMedicineS += "${getString(R.string.far_medicine_txt)}: ${ txtName.text.toString()}\n"
         temporaryListOfMedicineS += "${getString(R.string.far_price_Input)}: ${txtPrice.text.toString()}\n"
-        temporaryListOfMedicineS += "${getString(R.string.far_price_Input)}: ${txtQuantity.text.toString()}\n"
-        totalPrice = txtPrice.text.toString().toInt() * txtQuantity.text.toString().toInt()
+        temporaryListOfMedicineS += "${getString(R.string.far_quantity_input)}: ${txtQuantity.text.toString()}\n"
+        totalPrice += txtPrice.text.toString().toInt() * txtQuantity.text.toString().toInt()
         far_cleanMedicineFields()
     }
 

@@ -26,7 +26,7 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/vac_file_paths" />
+                android:resource="@xml/far_file_paths" />
         </provider>
         <activity
             android:name=".cap_AddActivity"
@@ -36,6 +36,18 @@
             android:name=".cap_ListActivity"
             android:exported="false"
             android:parentActivityName=".cap_MainActivity"/>
+        <!--
+
+        <activity
+            android:name=".far_MainActivity"
+            android:exported="false"/>
+             -->
+        <activity
+            android:name=".far_adding_patient"
+            android:exported="false"/>
+        <activity
+            android:name=".farListLayout"
+            android:exported="false"/>
         <activity
             android:name=".cap_MainActivity"
             android:exported="false" />
@@ -61,11 +73,10 @@
             android:name=".cit_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".far_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
