@@ -2,6 +2,36 @@
 <resources>
     <string name="app_name">Examen I</string>
 
+    <string name="cap_AddTraining">Añadir Capacitación</string>
+    <string name="cap_ListTraining">Lista Capacitaciones</string>
+    <string name="cap_mnu_save">Guardar</string>
+    <string name="cap_mnu_delete">Borrar</string>
+    <string name="cap_mnu_cancel">Cancelar</string>
+    <string name="cap_msgTrainingNotFound">Capacitación no encontrada</string>
+    <string name="cap_msgSave">Se guarda exitosamente.</string>
+    <string name="cap_msgMissingData">Faltan datos, por favor revisar.</string>
+    <string name="cap_msgDelete">Se eliminó exitosamente.</string>
+    <string name="cap_TrainingID">Identificador</string>
+    <string name="cap_TrainingName">Nombre</string>
+    <string name="cap_LastName">Apellido</string>
+    <string name="cap_TrainingPhone">Teléfono</string>
+    <string name="cap_TrainingEmail">Correo</string>
+    <string name="cap_TrainingAddress">Dirección</string>
+    <string name="cap_TrainingCountry">País</string>
+    <string name="cap_TrainingCourseCode">Código del Curso</string>
+    <string name="cap_TrainingDescription">Descripción</string>
+    <string name="cap_TrainingHours">Horas</string>
+    <string name="cap_TrainingDate">Fecha</string>
+    <string name="cap_TrainingPhoto">Foto de Capacitacion</string>
+    <string name="cap_AddPhoto">Anadir foto de Aula/Laboratorio</string>
+    <string name="cap_AddPhoto2">Añadir Foto</string>
+    <string name="cap_msgErrorCaptureImg">No se pudo capturar la imagen.</string>
+    <string name="cap_msgErrorPickImg">No se pudo seleccionar la imagen.</string>
+    <string name="cap_TakePhoto">Tomar Foto</string>
+    <string name="cap_ChooseGallery">Elige de la galería</string>
+    <string name="cap_msgCameraPermissionDenied">" Permiso de cámara denegado"</string>
+    <string name="cap_msgCameraAppAvailable">No hay aplicación de cámara disponible</string>
+
     <string name="bib_save">Guardar</string>
     <string name="bib_cancel">Cancelar</string>
     <string name="bib_remove">Eliminar</string>
@@ -60,4 +90,3 @@
     <string name="bib_getting_reservation">Obteniendo reserva con ID: %1$s - Resultado: %2$s</string>
     <string name="bib_reservation_not_found2">No se encontró la reserva con ID: %1$s</string>
 </resources>
-
