@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <application
@@ -19,6 +19,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/vac_file_paths" />
+        </provider>
         <activity
             android:name=".cap_AddActivity"
             android:exported="false"
@@ -38,6 +47,12 @@
             android:exported="false" />
         <activity
             android:name=".lic_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vac_FormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vac_ListActivity"
             android:exported="false" />
         <activity
             android:name=".vac_MainActivity"
