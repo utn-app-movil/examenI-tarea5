@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Examen I</string>
+    <string name="nav_btn_main_list">Lista de contenedores</string>
+    <string name="nav_btn_main_control">Control de contenedores</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="nav_id_container">Identificador de contenedor</string>
+    <string name="nav_nomPers">Nombre de persona</string>
+    <string name="nav_temperature">Temperatura</string>
+    <string name="nav_weigth">Peso</string>
+    <string name="nav_day">Día</string>
+    <string name="nav_Product">Nombre de producto</string>
+    <string name="nav_spinner">Tipo de contenedor</string>
+    <string name="nav_Insert">Insertar</string>
+    <string name="nav_update">Actualizar</string>
+    <string name="nav_delete">Eliminar</string>
+    <string name="nav_list">Listar</string>
+    <string name="msgErr">Contenedor no encontrado</string>
+    <string name="Succes">exito</string>
+    <string name="msgContDup">Contenedor duplicado</string>
+    <string name="Succesins">Insercion exitosa</string>
+    <string name="Succesdel">eliminacion exitosa</string>
+    <string name="Succesupd">Actualizacion exitosa</string>
+    <string name="nav_btn_img">Seleccione una imagen</string>
 </resources>
