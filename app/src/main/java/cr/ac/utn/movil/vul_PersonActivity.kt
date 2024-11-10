@@ -4,16 +4,29 @@ import cr.ac.utn.appmovil.vuelos.vul_Person
 import model.vul_PersonModel
 import cr.ac.utn.appmovil.util.EXTRA_MESSAGE_ID
 import android.app.AlertDialog
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
+import java.io.OutputStream
+import java.util.UUID
 
 class vul_PersonActivity : AppCompatActivity() {
 
@@ -41,6 +54,20 @@ class vul_PersonActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        
+        imgPassport = findViewById(R.id.imgPassport)
+        val btnTakePhoto: Button = findViewById<Button>(R.id.btnTakePhoto)
+        val btnSelectFromGallery: Button = findViewById<Button>(R.id.btnSelectFromGallery)
+
+        btnTakePhoto.setOnClickListener {
+            openCamera()
+        }
+
+        btnSelectFromGallery.setOnClickListener {
+            openGallery()
+        }
+
+        requestPermissions()
 
         personModel = vul_PersonModel(this)
 
@@ -70,6 +97,7 @@ class vul_PersonActivity : AppCompatActivity() {
         menuitemDelete = menu!!.findItem(R.id.mnu_delete)
         menuitemDelete.isVisible = isEditionMode
         return true
+        
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -107,6 +135,7 @@ class vul_PersonActivity : AppCompatActivity() {
             contact.vul_flightNumber = txtFlightNumber.text.toString()
             contact.vul_flightDate = txtFlightDate.text.toString()
             contact.vul_flightTime = txtFlightTime.text.toString()
+            contact.passportImageUri = personaModel.passportImageUri
 
             if (dataValidation(contact)) {
                 if (isEditionMode && personModel.getPersonByFullDescription(contact.FullDescription) != null) {
@@ -246,4 +275,79 @@ class vul_PersonActivity : AppCompatActivity() {
     private fun showWarning(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
+
+    private val CAMERA_REQUEST_CODE = 100
+    private val GALLERY_REQUEST_CODE = 101
+
+    private fun requestPermissions() {
+        ActivityCompat.requestPermissions(
+            this,
+            arrayOf(
+                Manifest.permission.CAMERA,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+            ),
+            CAMERA_REQUEST_CODE
+        )
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == CAMERA_REQUEST_CODE) {
+            if ((grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
+                Toast.makeText(this, "Permisos concedidos", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Permisos denegados", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private lateinit var imgPassport: ImageView
+    private lateinit var personaModel: vul_Person
+
+    private fun openCamera() {
+        val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        startActivityForResult(takePictureIntent, CAMERA_REQUEST_CODE)
+    }
+
+    private fun openGallery() {
+        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        startActivityForResult(intent, GALLERY_REQUEST_CODE)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == RESULT_OK) {
+            when (requestCode) {
+                CAMERA_REQUEST_CODE -> {
+                    val imageBitmap = data?.extras?.get("data") as Bitmap
+                    imgPassport.setImageBitmap(imageBitmap)
+                    personaModel.passportImageUri= saveImageToInternalStorage(imageBitmap)
+                }
+                GALLERY_REQUEST_CODE -> {
+                    val selectedImageUri = data?.data
+                    imgPassport.setImageURI(selectedImageUri)
+                    personaModel.passportImageUri = selectedImageUri
+                }
+            }
+        }
+    }
+
+    private fun saveImageToInternalStorage(bitmap: Bitmap): Uri? {
+        val filename = "${UUID.randomUUID()}.jpg"
+        var fos: OutputStream? = null
+        var imageUri: Uri? = null
+        try {
+            val file = File(filesDir, filename)
+            fos = FileOutputStream(file)
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos)
+            imageUri = Uri.fromFile(file)
+        } catch (e: IOException) {
+            e.printStackTrace()
+        } finally {
+            fos?.close()
+        }
+        return imageUri
+    }
+    
 }

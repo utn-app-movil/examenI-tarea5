@@ -1,5 +1,6 @@
 package cr.ac.utn.appmovil.vuelos
 
+import android.net.Uri
 import cr.ac.utn.appmovil.identities.Persona
 
 class vul_Person : Persona {
@@ -7,6 +8,7 @@ class vul_Person : Persona {
     var vul_flightNumber: String = ""
     var vul_flightDate: String = ""
     var vul_flightTime: String = ""
+    var passportImageUri: Uri? = null
 
     constructor() : super()
 
@@ -21,12 +23,14 @@ class vul_Person : Persona {
         destinationCountry: String,
         flightNumber: String,
         flightDate: String,
-        flightTime: String
+        flightTime: String,
+        passportImageUri: Uri? = null
     ) : super(id, name, lastName, phone, email, address, country) {
         this.vul_destinationCountry = destinationCountry
         this.vul_flightNumber = flightNumber
         this.vul_flightDate = flightDate
         this.vul_flightTime = flightTime
+        this.passportImageUri = passportImageUri
     }
 
     val FlightDescription: String
