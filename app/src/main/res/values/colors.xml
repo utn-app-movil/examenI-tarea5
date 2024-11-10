@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">#6200EE</color> <!-- Color primario, un morado oscuro -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Color primario oscuro -->
+    <color name="colorAccent">#03DAC5</color> <!-- Color de acento, un verde claro -->
+    <color name="grayLight">#F5F5F5</color> <!-- Color gris claro para fondo -->
+    <color name="grayDark">#BDBDBD</color> <!-- Color gris oscuro para texto secundario -->
+    <color name="blue">#2196F3</color> <!-- Azul para botones o enlaces -->
+    <color name="red">#F44336</color> <!-- Rojo para advertencias o mensajes de error -->
+    <color name="green">#4CAF50</color> <!-- Verde para éxito o confirmaciones -->
 </resources>

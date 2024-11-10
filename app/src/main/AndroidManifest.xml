@@ -7,7 +7,9 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -20,13 +22,31 @@
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
         <activity
+            android:name=".ema_mailDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ema_listEmail"
+            android:exported="false" />
+        <activity
+            android:name=".ema_EmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ema_MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".cap_AddActivity"
             android:exported="false"
-            android:parentActivityName=".cap_MainActivity"/>
+            android:parentActivityName=".cap_MainActivity" />
         <activity
             android:name=".cap_ListActivity"
             android:exported="false"
-            android:parentActivityName=".cap_MainActivity"/>
+            android:parentActivityName=".cap_MainActivity" />
         <activity
             android:name=".cap_MainActivity"
             android:exported="false" />
@@ -47,13 +67,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
