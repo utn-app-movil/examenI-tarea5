@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +19,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
+        <activity
+            android:name=".cap_AddActivity"
+            android:exported="false"
+            android:parentActivityName=".cap_MainActivity"/>
+        <activity
+            android:name=".cap_ListActivity"
+            android:exported="false"
+            android:parentActivityName=".cap_MainActivity"/>
+        <activity
+            android:name=".cap_MainActivity"
+            android:exported="false" />
         <activity
             android:name=".cen_MainActivity"
             android:exported="false" />
