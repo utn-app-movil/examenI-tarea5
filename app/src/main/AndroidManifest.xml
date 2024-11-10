@@ -2,12 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
-
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,8 +19,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/vac_file_paths" />
+        </provider>
         <activity
-            android:name=".farListLayout"
+            android:name=".cap_AddActivity"
+            android:exported="false"
+            android:parentActivityName=".cap_MainActivity"/>
+        <activity
+            android:name=".cap_ListActivity"
+            android:exported="false"
+            android:parentActivityName=".cap_MainActivity"/>
+        <activity
+            android:name=".cap_MainActivity"
             android:exported="false" />
         <activity
             android:name=".cen_MainActivity"
@@ -31,6 +49,12 @@
             android:name=".lic_MainActivity"
             android:exported="false" />
         <activity
+            android:name=".vac_FormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vac_ListActivity"
+            android:exported="false" />
+        <activity
             android:name=".vac_MainActivity"
             android:exported="false" />
         <activity
@@ -38,12 +62,6 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".far_adding_patient"
-            android:exported="false" />
-        <activity
-            android:name=".far_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,16 +69,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="cr.ac.utn.movil.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
     </application>
 
 </manifest>
