@@ -25,12 +25,12 @@ class enf_MainActivity_enf : AppCompatActivity() {
         }
 
         enf_btn_AddP.setOnClickListener {
-            val intent = Intent(this, activity_enf_main_enf::class.java)
+            //val intent = Intent(this, activity_enf_main_enf::class.java)
             startActivity(intent)
         }
 
         enf_btn_ViewP.setOnClickListener {
-            val intent = Intent(this, activity_enf_view::class.java)
+            //val intent = Intent(this, activity_enf_view::class.java)
             startActivity(intent)
         }
     }
