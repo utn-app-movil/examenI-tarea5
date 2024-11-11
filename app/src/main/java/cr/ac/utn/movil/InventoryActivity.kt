@@ -52,16 +52,15 @@ class InventoryActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btn_addProduct).setOnClickListener { addProduct() }
         findViewById<Button>(R.id.btn_updateProduct).setOnClickListener { updateProduct() }
         findViewById<Button>(R.id.btn_deleteProduct).setOnClickListener { deleteProduct() }
-        findViewById<Button>(R.id.btn_addPhoto).setOnClickListener { showImagePickerDialog() }
     }
 
     // Método para añadir un nuevo producto al inventario
     private fun addProduct() {
-        val productCode = findViewById<EditText>(R.id.et_productCode).text.toString()
-        val productName = findViewById<EditText>(R.id.et_productName).text.toString()
-        val quantity = findViewById<EditText>(R.id.et_quantity).text.toString().toIntOrNull() ?: 0
-        val supplierName = findViewById<EditText>(R.id.et_supplierName).text.toString()
-        val unitCost = findViewById<EditText>(R.id.et_unitCost).text.toString().toDoubleOrNull() ?: 0.0
+        val productCode = findViewById<EditText>(R.id.inv_productCode).text.toString()
+        val productName = findViewById<EditText>(R.id.inv_productName).text.toString()
+        val quantity = findViewById<EditText>(R.id.inv_quantity).text.toString().toIntOrNull() ?: 0
+        val supplierName = findViewById<EditText>(R.id.inv_supplierName).text.toString()
+        val unitCost = findViewById<EditText>(R.id.inv_unitCost).text.toString().toDoubleOrNull() ?: 0.0
         val date = SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Date())
 
         val product = _invProduct(productCode, productCode, productName, quantity, date, supplierName, unitCost, imagePath)
@@ -76,11 +75,11 @@ class InventoryActivity : AppCompatActivity() {
 
     // Método para actualizar un producto existente
     private fun updateProduct() {
-        val productCode = findViewById<EditText>(R.id.et_productCode).text.toString()
-        val productName = findViewById<EditText>(R.id.et_productName).text.toString()
-        val quantity = findViewById<EditText>(R.id.et_quantity).text.toString().toIntOrNull() ?: 0
-        val supplierName = findViewById<EditText>(R.id.et_supplierName).text.toString()
-        val unitCost = findViewById<EditText>(R.id.et_unitCost).text.toString().toDoubleOrNull() ?: 0.0
+        val productCode = findViewById<EditText>(R.id.inv_productCode).text.toString()
+        val productName = findViewById<EditText>(R.id.inv_productName).text.toString()
+        val quantity = findViewById<EditText>(R.id.inv_quantity).text.toString().toIntOrNull() ?: 0
+        val supplierName = findViewById<EditText>(R.id.inv_supplierName).text.toString()
+        val unitCost = findViewById<EditText>(R.id.inv_unitCost).text.toString().toDoubleOrNull() ?: 0.0
         val date = SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Date())
 
         val product = _invProduct(productCode, productCode, productName, quantity, date, supplierName, unitCost, imagePath)
@@ -92,7 +91,7 @@ class InventoryActivity : AppCompatActivity() {
 
     // Método para eliminar un producto
     private fun deleteProduct() {
-        val productCode = findViewById<EditText>(R.id.et_productCode).text.toString()
+        val productCode = findViewById<EditText>(R.id.inv_productCode).text.toString()
         productModel.deleteProduct(productCode)
         Toast.makeText(this, "Producto deleted", Toast.LENGTH_SHORT).show()
         productAdapter.notifyDataSetChanged()
@@ -101,11 +100,11 @@ class InventoryActivity : AppCompatActivity() {
 
     // Método para limpiar los campos de entrada
     private fun clearFields() {
-        findViewById<EditText>(R.id.et_productCode).text.clear()
-        findViewById<EditText>(R.id.et_productName).text.clear()
-        findViewById<EditText>(R.id.et_quantity).text.clear()
-        findViewById<EditText>(R.id.et_supplierName).text.clear()
-        findViewById<EditText>(R.id.et_unitCost).text.clear()
+        findViewById<EditText>(R.id.inv_productCode).text.clear()
+        findViewById<EditText>(R.id.inv_productName).text.clear()
+        findViewById<EditText>(R.id.inv_quantity).text.clear()
+        findViewById<EditText>(R.id.inv_supplierName).text.clear()
+        findViewById<EditText>(R.id.inv_unitCost).text.clear()
         productImageView.setImageURI(null)
         imagePath = null
     }

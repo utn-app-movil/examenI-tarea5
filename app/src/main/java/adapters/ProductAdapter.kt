@@ -6,15 +6,18 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import cr.ac.utn.movil.R
 import cr.ac.utn.appmovil.identities._invProduct
+import kotlinx.android.synthetic.main.activity_inventory.view.inv_productName
+import kotlinx.android.synthetic.main.activity_inventory.view.inv_quantity
+import kotlinx.android.synthetic.main.activity_inventory.view.inv_supplierName
 import kotlinx.android.synthetic.main.item_product.view.*
 
 class ProductAdapter(private val products: List<_invProduct>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
     inner class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(product: _invProduct) {
-            itemView.tv_productName.text = product.productName
-            itemView.tv_quantity.text = "Quantity: ${product.quantity}"
-            itemView.tv_supplier.text = "Supplier: ${product.supplierName}"
+            itemView.inv_productName.text = product.productName
+           itemView.inv_quantity.text = "quantity: ${product.quantity}"
+            itemView.inv_supplierName.text = "supplier: ${product.supplierName}"
 
         }
     }
