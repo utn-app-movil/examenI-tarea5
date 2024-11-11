@@ -49,7 +49,13 @@
 
 
         <!--Tipo Cambio-->
-
+        <activity
+            android:name=".tcam_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tcam_Custom_List_Activity"
+            android:exported="false"
+            android:parentActivityName=".tcam_MainActivity" />
 
         <!--Servicio de correo-->
 
@@ -64,7 +70,7 @@
         <activity android:name=".cen_MainActivity" android:exported="false" />
         <activity android:name=".cen_custom_list_activity" android:exported="false" />
         <activity android:name=".cen_add_persona_activity" android:exported="false" />
-        <activity android:name=".cen_MainActivityK" android:exported="true">
+        <activity android:name=".cen_MainActivityK" android:exported="true"/>
 
 
         <!--Enfermeria-->

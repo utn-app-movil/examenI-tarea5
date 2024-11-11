@@ -68,7 +68,22 @@
 
 
     <!--Tipo Cambio-->
-
+    //Tcam Español
+    <string name="tcam_PersonName">Nombre completo</string>
+    <string name="tcam_DateTime">Fecha y hora</string>
+    <string name="tcam_ValueChange">Valor de tipo de cambio</string>
+    <string name="tcam_AmountChange">Monto a Cambiar</string>
+    <string name="tcam_CalculateAmount">Calcular monto a pagar</string>
+    <string name="tcam_AmountPay">Monto a pagar:</string>
+    <string name="tcam_addChange">Agregar tipo de cambio</string>
+    <string name="tcam_ViewChanges">Ver tipos de cambio</string>
+    <string name="tcam_Menu_Save">Guardar</string>
+    <string name="tcam_Menu_Delete">Eliminar</string>
+    <string name="tcam_Menu_Cancel">Cancelar</string>
+    <string-array name="exchange_type_array">
+        <item>Dolares a Colones</item>
+        <item>Colones a Dolares</item>
+    </string-array>
 
     <!--Servicio de correo-->
 
