@@ -8,6 +8,15 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btn_open_inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Open Inventory"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <Button
         android:id="@+id/button17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
