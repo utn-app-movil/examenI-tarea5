@@ -32,6 +32,19 @@
 
 
         <activity
+            android:name=".nav_custom_list"
+            android:exported="false" />
+        <activity
+            android:name=".nav_list"
+            android:exported="false" />
+        <activity
+            android:name=".nav_Container_control"
+            android:exported="false" />
+        <activity
+            android:name=".nav_main"
+            android:exported="false"/>
+
+        <activity
             android:name=".vul_PersonListActivity"
             android:exported="false" />
         <activity
