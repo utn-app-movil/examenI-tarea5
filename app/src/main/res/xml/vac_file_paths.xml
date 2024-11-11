@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
 </PreferenceScreen>
+=======
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-files-path name="my_images" path="." />
+</paths>
+>>>>>>> 3d4c21d27c425b24227cb90c4d2eea25bf5a5bb4

@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -28,6 +29,9 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/vac_file_paths" />
         </provider>
+
+
+        <!--Alquiler-->
         <activity
             android:name=".alq_ClientListActivity"
             android:exported="false" />
@@ -45,30 +49,113 @@
         <activity
             android:name=".alq_MainActivity"
             android:exported="false" />
+
+        <!--Eventos-->
+
+
+        <!--Reclutamiento-->
+
+
+        <!--Subasta-->
+
+
+        <!--Nomina-->
+
+
+        <!--Inventario-->
+
+
+        <!--Tipo Cambio-->
+
+
+        <!--Servicio de correo-->
+
+
+        <!--Contribución Dashboard-->
+
+
+        <!--Seguro-->
+
+
+        <!--Censo-->
+        <activity android:name=".cen_MainActivity" android:exported="false" />
+
+        <!--Enfermeria-->
+        <activity android:name=".enf_MainActivity" android:exported="false" />
+
+        <!--Licencia-->
+        <activity android:name=".lic_MainActivity" android:exported="false" />
+
+        <!--Naviera-->
+        <activity  android:name=".nav_custom_list" android:exported="false" />
+        <activity  android:name=".nav_list" android:exported="false" />
+        <activity android:name=".nav_Container_control" android:exported="false" />
+        <activity android:name=".nav_main" android:exported="false"/>
+
+        <!--Vuelos-->
+        <activity android:name=".vul_PersonListActivity" android:exported="false" />
+        <activity android:name=".vul_PersonActivity" android:exported="false" />
+        <activity android:name=".vul_CustomListActivity" android:exported="false" />
+        <activity android:name=".vul_MainActivity" android:exported="false" />
+
+        <!--Capacitaciones-->
+        <activity android:name=".cap_AddActivity"
+            android:exported="false"
+            android:parentActivityName=".cap_MainActivity"/>
+
         <activity
-            android:name=".cen_MainActivity"
+            android:name=".cap_ListActivity"
+            android:exported="false"
+            android:parentActivityName=".cap_MainActivity"/>
+
+        <activity android:name=".cap_MainActivity" android:exported="false" />
+
+        <!-- Farmacia_Daniel-->
+        <activity android:name=".far_MainActivity" android:exported="false"/>
+        <activity android:name=".far_adding_patient" android:exported="false"/>
+        <activity android:name=".farListLayout" android:exported="false"/>
+
+        <!--Vacaciones-->
+        <activity android:name=".vac_FormActivity" android:exported="false" />
+        <activity android:name=".vac_ListActivity" android:exported="false" />
+        <activity android:name=".vac_MainActivity" android:exported="false" />
+
+        <!--Citas-->
+        <activity android:name=".cit_MainActivity" android:exported="false" />
+
+        <!--Biblioteca-->
+        <activity android:name=".bib_Lista" android:exported="false" />
+        <activity android:name=".bib_CRUD"  android:exported="false" />
+        <activity android:name=".bib_MainActivity" android:exported="false" />
+
+        <!--Sinpe-->
+        <activity android:name=".sin_CRUD" android:exported="false" />
+        <activity android:name=".sin_ListaActivity" android:exported="false" />
+        <activity android:name=".sin_MainActivity"  android:exported="false" />
+
+        <!--Reclutamiento-->
+        <activity
+            android:name=".rec_RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".enf_MainActivity"
+            android:name=".rec_MainActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".rec_ListActivity"
             android:exported="false" />
         <activity
-            android:name=".lic_MainActivity"
+            android:name=".rec_DetailActivity"
             android:exported="false" />
-        <activity
-            android:name=".vac_MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".cit_MainActivity"
-            android:exported="false" />
+
+        <!--Main Activity del profesor-->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
