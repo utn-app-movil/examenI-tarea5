@@ -80,7 +80,38 @@
 
 
     <!--Censo-->
-
+    <string name="Cen_addcensus">"añadir nueva persona "</string>
+    <string name="Cen_viewcensus">mirar lista de censo</string>
+    <string name="cen_Userid">ID del usuario</string>
+    <string name="cen_name">Nombre</string>
+    <string name="Cen_Phone">Numero</string>
+    <string name="Cen_LastName">Apellido</string>
+    <string name="Cen_Email">Correo</string>
+    <string name="Cen_Address">Direccion</string>
+    <string name="Cen_Province">Provincia</string>
+    <string name="Cen_Canton">Canton</string>
+    <string name="Cen_District">Distrito</string>
+    <string name="Cen_mn_save">Guardar</string>
+    <string name="Cen_menu_delete">Borrar</string>
+    <string name="Cen_mn_cancel">Cancelar</string>
+    <string name="Cen_msg_notFound">No econtrado</string>
+    <string name="Cen_msg_sure">seguro</string>
+    <string name="Cen_msg_ready">Listo</string>
+    <string name="Cen_No">No</string>
+    <string name="Cen_msg_update">Actualizado</string>
+    <string name="Cen_msg_save_user">usuario guardado</string>
+    <string name="Cen_msg_missing_data">Faltan datos</string>
+    <string name="Cen_user_exist">El usuario ya se ecuentra</string>
+    <string name="Cen_much_text">Mucho texto</string>
+    <string name="Cen_not_email">Email no aceptado</string>
+    <string name="Cen_much_number">El numero debe ser de 8</string>
+    <string name="Cen_array_menu">Servicios</string>
+    <string name="Cen_save_service">Guardar servicio</string>
+    <string name="Cen_camera">Foto</string>
+    <string name="Cen_take_photo">tomar foto</string>
+    <string name="Cen_take_gallery">Galeria</string>
+    <string name="Cen_fout_image">Tomar imagen del a fuente</string>
+ 
 
     <!--Enfermeria-->
 
