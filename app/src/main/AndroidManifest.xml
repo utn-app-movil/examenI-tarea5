@@ -34,10 +34,7 @@
 
 
         <!--Eventos-->
-        <activity android:name=".eve_ListActivity" android:exported="false" />
-        <activity android:name=".eve_ViewActivity" android:exported="false" />
-        <activity android:name=".eve_AddActivity" android:exported="false" />
-        <activity android:name=".eve_MainActivity" android:exported="true"/>
+
 
         <!--Reclutamiento-->
 
@@ -52,7 +49,13 @@
 
 
         <!--Tipo Cambio-->
-
+        <activity
+            android:name=".tcam_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tcam_Custom_List_Activity"
+            android:exported="false"
+            android:parentActivityName=".tcam_MainActivity" />
 
         <!--Servicio de correo-->
 
@@ -65,6 +68,10 @@
 
         <!--Censo-->
         <activity android:name=".cen_MainActivity" android:exported="false" />
+        <activity android:name=".cen_custom_list_activity" android:exported="false" />
+        <activity android:name=".cen_add_persona_activity" android:exported="false" />
+        <activity android:name=".cen_MainActivityK" android:exported="true"/>
+
 
         <!--Enfermeria-->
         <activity android:name=".enf_MainActivity" android:exported="false" />
