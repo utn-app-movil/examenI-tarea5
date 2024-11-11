@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +19,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/vac_file_paths" />
+        </provider>
+        <activity
+            android:name=".alq_ClientListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".alq_AddClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".aql_ClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".alq_ClientListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".alq_MainActivity"
+            android:exported="false" />
         <activity
             android:name=".cen_MainActivity"
             android:exported="false" />
