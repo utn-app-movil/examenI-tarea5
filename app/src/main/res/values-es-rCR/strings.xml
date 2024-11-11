@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- App Name -->
     <string name="app_name">Examen I</string>
     <string name="far_farm_title_name">Farmacia</string>
     <string name="far_patient_txt">Paciente</string>
@@ -33,7 +34,6 @@
     <string name="far_profile_">Perfil</string>
     <string name="far_photo_profile">Avatar</string>
 
-
     <string name="nav_btn_main_list">Lista de contenedores</string>
     <string name="nav_btn_main_control">Control de contenedores</string>
     <string name="welcome">Bienvenido</string>
@@ -55,7 +55,6 @@
     <string name="Succesdel">eliminacion exitosa</string>
     <string name="Succesupd">Actualizacion exitosa</string>
     <string name="nav_btn_img">Seleccione una imagen</string>
-
 
     <string name="vul_PersonNotFound">Persona no encontrada</string>
     <string name="vul_btnAddPerson">Agregar Persona</string>
@@ -226,6 +225,7 @@
     <string name="bib_loading_reservation">Cargando reserva con ID: %1$s</string>
     <string name="bib_getting_reservation">Obteniendo reserva con ID: %1$s - Resultado: %2$s</string>
     <string name="bib_reservation_not_found2">No se encontró la reserva con ID: %1$s</string>
+
     <string name="sin_label_origin_person">Persona de Origen: </string>
     <string name="sin_label_destination_name">Nombre del Destinatario: </string>
     <string name="sin_label_amount">Monto: </string>
@@ -265,7 +265,7 @@
     <string name="sin_permission_storage_rationale">Se necesita permiso de almacenamiento para seleccionar fotos de la galería.</string>
     <string name="sin_permission_denied">Permiso denegado</string>
     <string name="sin_error_origin_person_empty">El campo de persona de origen no puede estar vacío</string>
-    <string name="sin_choose_option">Elegir una opción</string>
+    <string name="sin_choose_option">Elige una opción</string>
     <string name="sin_select_from_gallery">Seleccionar de la galería</string>
     <string name="sin_error_creating_file">Error al crear el archivo</string>
     <string name="sin_permissions_required">Permisos requeridos</string>
@@ -274,5 +274,52 @@
     <string name="sin_confirm_delete">Confirmar eliminación</string>
     <string name="sin_delete_message">¿Está seguro de que desea eliminar esta transacción SINPE?</string>
     <string name="sin_delete">Eliminar</string>
+
+    <!-- Aquí comienzan las cadenas añadidas de la sección rec -->
+    <string name="rec_button_register">Registrar Datos</string>
+    <string name="rec_button_list">Ver Lista de Registros</string>
+    <string name="rec_button_save">Guardar</string>
+
+    <!-- Activity RecRegisterActivity Texts -->
+    <string name="rec_hint_name">Nombre completo</string>
+    <string name="rec_hint_last_name">Apellido</string>
+    <string name="rec_hint_phone">Teléfono</string>
+    <string name="rec_hint_email">Correo electrónico</string>
+    <string name="rec_hint_address">Dirección</string>
+    <string name="rec_hint_country">País</string>
+    <string name="rec_hint_province">Provincia</string>
+    <string name="rec_hint_canton">Cantón</string>
+    <string name="rec_hint_district">Distrito</string>
+    <string name="rec_hint_salary">Pretensión salarial</string>
+    <string name="rec_hint_experience">Años de experiencia</string>
+    <string name="rec_role_prompt">Rol de interés</string>
+
+    <!-- Roles for Spinner -->
+    <string name="rec_role_software">Software</string>
+    <string name="rec_role_infrastructure">Infraestructura</string>
+    <string name="rec_role_networks">Redes</string>
+    <string name="rec_role_security">Seguridad</string>
+    <string name="rec_role_qa">QA</string>
+
+    <!-- Toast Messages -->
+    <string name="rec_data_saved">Datos guardados correctamente</string>
+    <string name="rec_fill_all_fields">Por favor complete todos los campos</string>
+
+    <!-- RecListActivity Texts -->
+    <string name="rec_list_title">Lista de Registros</string>
+    <string name="rec_no_records">No hay registros disponibles</string>
+
+    <!-- RecDetailActivity Texts -->
+    <string name="rec_detail_name">Nombre:</string>
+    <string name="rec_detail_phone">Teléfono:</string>
+    <string name="rec_detail_email">Correo:</string>
+    <string name="rec_detail_address">Dirección:</string>
+    <string name="rec_detail_country">País:</string>
+
+    <string name="candidate_photo">Foto del candidato</string>
+<string name="candidate_name">Nombre del candidato</string>
+<string name="selected_image_preview">Vista previa de la imagen seleccionada</string>
+<string name="choose_photo">Escoger foto</string>
+<string name="candidate_photo_desc">Foto del candidato</string>
 
 </resources>

@@ -115,6 +115,21 @@
         <activity android:name=".sin_ListaActivity" android:exported="false" />
         <activity android:name=".sin_MainActivity"  android:exported="false" />
 
+        <!--Reclutamiento-->
+        <activity
+            android:name=".rec_RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".rec_MainActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".rec_ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".rec_DetailActivity"
+            android:exported="false" />
+
         <!--Main Activity del profesor-->
         <activity
             android:name=".MainActivity"
