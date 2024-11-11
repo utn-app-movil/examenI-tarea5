@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
-        <!--
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -29,7 +29,8 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/vac_file_paths" />
         </provider>
-        -->
+
+        <!-- PROVIDER DE FARMACIA - DANIEL -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="cr.ac.utn.movil.fileprovider"
