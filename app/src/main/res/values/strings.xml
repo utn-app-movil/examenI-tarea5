@@ -93,6 +93,38 @@
 
 
     <!--Censo-->
+    <string name="Cen_addcensus">add new person</string>
+    <string name="Cen_viewcensus">view census list</string>
+    <string name="cen_Userid">Contact ID</string>
+    <string name="cen_name">Name</string>
+    <string name="Cen_Phone">Phone</string>
+    <string name="Cen_LastName">Last Name</string>
+    <string name="Cen_Email">Email</string>
+    <string name="Cen_Address">Address</string>
+    <string name="Cen_Province">Province</string>
+    <string name="Cen_Canton">Canton</string>
+    <string name="Cen_District">District</string>
+    <string name="Cen_mn_save">save</string>
+    <string name="Cen_menu_delete">Delete</string>
+    <string name="Cen_mn_cancel">Cancel</string>
+    <string name="Cen_msg_notFound">Not Found</string>
+    <string name="Cen_msg_sure">sure</string>
+    <string name="Cen_msg_ready">Ready</string>
+    <string name="Cen_No">No</string>
+    <string name="Cen_msg_update">Update</string>
+    <string name="Cen_msg_save_user">Save user</string>
+    <string name="Cen_msg_missing_data">missing Data</string>
+    <string name="Cen_user_exist">User exist</string>
+    <string name="Cen_much_text">much text</string>
+    <string name="Cen_not_email">email not accepted</string>
+    <string name="Cen_much_number">much number</string>
+    <string name="Cen_array_menu">Service</string>
+    <string name="Cen_save_service">Save Service</string>
+    <string name="Cen_camera">Photo</string>
+    <string name="Cen_take_photo">photo</string>
+    <string name="Cen_take_gallery">Gallery</string>
+    <string name="Cen_fout_image">Image</string>
+
 
 
     <!--Enfermeria-->
