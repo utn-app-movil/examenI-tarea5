@@ -60,13 +60,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    // Para RecyclerView
+
     implementation (libs.androidx.recyclerview)
-
-    // Para Button y otras vistas estándar
     implementation (libs.androidx.appcompat)
-
-    // Para ConstraintLayout
     implementation (libs.androidx.constraintlayout)
 
 }
