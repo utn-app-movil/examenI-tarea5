@@ -39,7 +39,8 @@
             android:exported="false" />
         <activity
             android:name=".alq_ClientListActivity"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
 
         <activity
             android:name=".alq_MainActivity"
