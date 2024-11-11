@@ -70,7 +70,7 @@
         <activity android:name=".cen_MainActivity" android:exported="false" />
         <activity android:name=".cen_custom_list_activity" android:exported="false" />
         <activity android:name=".cen_add_persona_activity" android:exported="false" />
-        <activity android:name=".cen_MainActivityK" android:exported="true">
+        <activity android:name=".cen_MainActivityK" android:exported="true"/>
 
 
         <!--Enfermeria-->
