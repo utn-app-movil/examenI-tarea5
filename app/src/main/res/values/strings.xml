@@ -1,5 +1,37 @@
 <resources>
     <string name="app_name">Test 1</string>
+    //btn
+    <string name="nav_btn_main_list">Container List</string>
+    <string name="nav_btn_main_control">Container control</string>
+    <string name="nav_btn_img">Seleccion image</string>
+    //msgsuccess
+    <string name="welcome">Welcome</string>
+    <string name="Succesins">Succes insert</string>
+    <string name="Succesdel">Succes delete</string>
+    <string name="Succesupd">Succes update</string>
+    //msgerr
+    <string name="msgErr">Container not found</string>
+    <string name="msgContDup">Container duplicated</string>
+    //containerSt
+    <string name="nav_id_container">Container Id</string>
+    <string name="nav_nomPers">Person Name</string>
+    <string name="nav_temperature">Temperature</string>
+    <string name="nav_weigth">Weigth</string>
+    <string name="nav_day">Day</string>
+    <string name="nav_Product">Product Name</string>
+    <string name="nav_spinner">Type Of container</string>
+    //Menu
+    <string name="nav_Insert">Insert</string>
+    <string name="nav_update">Update</string>
+    <string name="nav_delete">Delete</string>
+    <string name="nav_list">List</string>
+    //spinner
+    <string-array name="container_types">
+        <item>Humedo</item>
+        <item>Seco</item>
+    </string-array>
+    <string name="Succes">succes</string>
+
     <string name="vul_PersonNotFound">Person not found</string>
     <string name="vul_btnAddPerson">Add Person</string>
     <string name="vul_btnViewList">View List</string>
@@ -39,6 +71,7 @@
     <string name="vul_DestinationCountryRequired">Destination Country is Required</string>
     <string name="vul_DeleteDIalog">Delete Contact</string>
     <string name="vul_Confirmation">Confirmation</string>
+
     <string name="cap_AddTraining">Add Training</string>
     <string name="cap_ListTraining">List Training</string>
     <string name="cap_mnu_save">Save</string>
