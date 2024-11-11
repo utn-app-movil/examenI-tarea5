@@ -315,4 +315,11 @@
     <string name="rec_detail_email">Correo:</string>
     <string name="rec_detail_address">Dirección:</string>
     <string name="rec_detail_country">País:</string>
+
+    <string name="candidate_photo">Foto del candidato</string>
+<string name="candidate_name">Nombre del candidato</string>
+<string name="selected_image_preview">Vista previa de la imagen seleccionada</string>
+<string name="choose_photo">Escoger foto</string>
+<string name="candidate_photo_desc">Foto del candidato</string>
+
 </resources>
