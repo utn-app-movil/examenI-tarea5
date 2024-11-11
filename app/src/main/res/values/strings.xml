@@ -177,4 +177,27 @@
     <string name="sin_confirm_delete">Confirm Delete</string>
     <string name="sin_delete_message">Are you sure you want to delete this SINPE transaction?</string>
     <string name="sin_delete">Delete</string>
+    <string name="sub_title">Auction</string>
+    <string name="sub_btn_imagenadd">Add image</string>
+    <string name="sub_nameperson">Name</string>
+    <string name="sub_LastNperson">Last Name</string>
+    <string name="sub_Phoneperson">Phone number</string>
+    <string name="sub_emailperson">Email</string>
+    <string name="sub_Addressperson">Address</string>
+    <string name="sub_Countryperson">Country</string>
+    <string name="sub_about_Auction">Information about the Auction</string>
+    <string name="sub_date">Date</string>
+    <string name="sub_hour">Hour</string>
+    <string name="sub_amout">Amount</string>
+    <string name="sub_desc">Description</string>
+    <string name="sub_selled_Question">Selled</string>
+    <string name="sub_addBTN">Add</string>
+    <string name="sub_gointToadd">Add person</string>
+    <string name="sub_GointTo_list">Gonna show list</string>
+    <string name="sub_photo_select">Camera</string>
+    <string name="sub_gallery_select">Gallery</string>
+    <string name="sub_selectOption">Select an Option</string>
+    <string name="subCode">Cod</string>
+    <string name="sub_success">Success</string>
+    <string name="subadd">Save</string>
 </resources>
