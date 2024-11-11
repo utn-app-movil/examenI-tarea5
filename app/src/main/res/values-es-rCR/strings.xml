@@ -80,6 +80,10 @@
     <string name="tcam_Menu_Save">Guardar</string>
     <string name="tcam_Menu_Delete">Eliminar</string>
     <string name="tcam_Menu_Cancel">Cancelar</string>
+    <string-array name="exchange_type_array">
+        <item>Dolares a Colones</item>
+        <item>Colones a Dolares</item>
+    </string-array>
 
     <!--Servicio de correo-->
 
