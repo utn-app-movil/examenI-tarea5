@@ -1,7 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- App Name -->
     <string name="app_name">Examen I</string>
 
+    <!--Alquiler-->
+
+
+    <!--Eventos-->
+
+
+    <!--Reclutamiento-->
+    <!-- Aquí comienzan las cadenas añadidas de la sección rec -->
+    <string name="rec_button_register">Registrar Datos</string>
+    <string name="rec_button_list">Ver Lista de Registros</string>
+    <string name="rec_button_save">Guardar</string>
+
+    <!-- Activity RecRegisterActivity Texts -->
+    <string name="rec_hint_name">Nombre completo</string>
+    <string name="rec_hint_last_name">Apellido</string>
+    <string name="rec_hint_phone">Teléfono</string>
+    <string name="rec_hint_email">Correo electrónico</string>
+    <string name="rec_hint_address">Dirección</string>
+    <string name="rec_hint_country">País</string>
+    <string name="rec_hint_province">Provincia</string>
+    <string name="rec_hint_canton">Cantón</string>
+    <string name="rec_hint_district">Distrito</string>
+    <string name="rec_hint_salary">Pretensión salarial</string>
+    <string name="rec_hint_experience">Años de experiencia</string>
+    <string name="rec_role_prompt">Rol de interés</string>
+
+    <!-- Roles for Spinner -->
+    <string name="rec_role_software">Software</string>
+    <string name="rec_role_infrastructure">Infraestructura</string>
+    <string name="rec_role_networks">Redes</string>
+    <string name="rec_role_security">Seguridad</string>
+    <string name="rec_role_qa">QA</string>
+
+    <!-- Toast Messages -->
+    <string name="rec_data_saved">Datos guardados correctamente</string>
+    <string name="rec_fill_all_fields">Por favor complete todos los campos</string>
+
+    <!-- RecListActivity Texts -->
+    <string name="rec_list_title">Lista de Registros</string>
+    <string name="rec_no_records">No hay registros disponibles</string>
+
+    <!-- RecDetailActivity Texts -->
+    <string name="rec_detail_name">Nombre:</string>
+    <string name="rec_detail_phone">Teléfono:</string>
+    <string name="rec_detail_email">Correo:</string>
+    <string name="rec_detail_address">Dirección:</string>
+    <string name="rec_detail_country">País:</string>
+
+    <!-- Rec Photo-->
+    <string name="candidate_photo">Foto del candidato</string>
+    <string name="candidate_name">Nombre del candidato</string>
+    <string name="selected_image_preview">Vista previa de la imagen seleccionada</string>
+    <string name="choose_photo">Escoger foto</string>
+    <string name="candidate_photo_desc">Foto del candidato</string>
+
+    <!--Subasta-->
+
+
+    <!--Nomina-->
+
+
+    <!--Inventario-->
+
+
+    <!--Tipo Cambio-->
+    //Tcam Español
+    <string name="tcam_PersonName">Nombre completo</string>
+    <string name="tcam_DateTime">Fecha y hora</string>
+    <string name="tcam_ValueChange">Valor de tipo de cambio</string>
+    <string name="tcam_AmountChange">Monto a Cambiar</string>
+    <string name="tcam_CalculateAmount">Calcular monto a pagar</string>
+    <string name="tcam_AmountPay">Monto a pagar:</string>
+    <string name="tcam_addChange">Agregar tipo de cambio</string>
+    <string name="tcam_ViewChanges">Ver tipos de cambio</string>
+    <string name="tcam_Menu_Save">Guardar</string>
+    <string name="tcam_Menu_Delete">Eliminar</string>
+    <string name="tcam_Menu_Cancel">Cancelar</string>
+    <string-array name="exchange_type_array">
+        <item>Dolares a Colones</item>
+        <item>Colones a Dolares</item>
+    </string-array>
+
+    <!--Servicio de correo-->
+
+
+    <!--Contribución Dashboard-->
+
+
+    <!--Seguro-->
+
+
+    <!--Censo-->
+    <string name="Cen_addcensus">"añadir nueva persona "</string>
+    <string name="Cen_viewcensus">mirar lista de censo</string>
+    <string name="cen_Userid">ID del usuario</string>
+    <string name="cen_name">Nombre</string>
+    <string name="Cen_Phone">Numero</string>
+    <string name="Cen_LastName">Apellido</string>
+    <string name="Cen_Email">Correo</string>
+    <string name="Cen_Address">Direccion</string>
+    <string name="Cen_Province">Provincia</string>
+    <string name="Cen_Canton">Canton</string>
+    <string name="Cen_District">Distrito</string>
+    <string name="Cen_mn_save">Guardar</string>
+    <string name="Cen_menu_delete">Borrar</string>
+    <string name="Cen_mn_cancel">Cancelar</string>
+    <string name="Cen_msg_notFound">No econtrado</string>
+    <string name="Cen_msg_sure">seguro</string>
+    <string name="Cen_msg_ready">Listo</string>
+    <string name="Cen_No">No</string>
+    <string name="Cen_msg_update">Actualizado</string>
+    <string name="Cen_msg_save_user">usuario guardado</string>
+    <string name="Cen_msg_missing_data">Faltan datos</string>
+    <string name="Cen_user_exist">El usuario ya se ecuentra</string>
+    <string name="Cen_much_text">Mucho texto</string>
+    <string name="Cen_not_email">Email no aceptado</string>
+    <string name="Cen_much_number">El numero debe ser de 8</string>
+    <string name="Cen_array_menu">Servicios</string>
+    <string name="Cen_save_service">Guardar servicio</string>
+    <string name="Cen_camera">Foto</string>
+    <string name="Cen_take_photo">tomar foto</string>
+    <string name="Cen_take_gallery">Galeria</string>
+    <string name="Cen_fout_image">Tomar imagen del a fuente</string>
+
+
+    <!--Enfermeria-->
+
+
+    <!--Licencia-->
+
+
+    <!--Naviera-->
+    <string name="nav_btn_main_list">Lista de contenedores</string>
+    <string name="nav_btn_main_control">Control de contenedores</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="nav_id_container">Identificador de contenedor</string>
+    <string name="nav_nomPers">Nombre de persona</string>
+    <string name="nav_temperature">Temperatura</string>
+    <string name="nav_weigth">Peso</string>
+    <string name="nav_day">Día</string>
+    <string name="nav_Product">Nombre de producto</string>
+    <string name="nav_spinner">Tipo de contenedor</string>
+    <string name="nav_Insert">Insertar</string>
+    <string name="nav_update">Actualizar</string>
+    <string name="nav_delete">Eliminar</string>
+    <string name="nav_list">Listar</string>
+    <string name="msgErr">Contenedor no encontrado</string>
+    <string name="Succes">exito</string>
+    <string name="msgContDup">Contenedor duplicado</string>
+    <string name="Succesins">Insercion exitosa</string>
+    <string name="Succesdel">eliminacion exitosa</string>
+    <string name="Succesupd">Actualizacion exitosa</string>
+    <string name="nav_btn_img">Seleccione una imagen</string>
+
+    <!--Vuelos-->
+    <string name="vul_PersonNotFound">Persona no encontrada</string>
+    <string name="vul_btnAddPerson">Agregar Persona</string>
+    <string name="vul_btnViewList">Ver Lista</string>
+    <string name="vul_btnCustomList">Ver Lista Personalizada</string>
+    <string name="vul_btnCloseDialog">Cerrar aplicacion</string>
+    <string name="vul_Mensaje">Mensaje de Keneth</string>
+    <string name="vul_ID">Identificacion</string>
+    <string name="vul_Name">Name</string>
+    <string name="vul_LastName">Apellido</string>
+    <string name="vul_Phone">Telefono</string>
+    <string name="vul_Email">Correo Electronico</string>
+    <string name="vul_Address">Direccion</string>
+    <string name="vul_Country">Pais</string>
+    <string name="vul_DestinationCountry">Pais de Destino</string>
+    <string name="vul_FlighDate">Fecha de Vuelo</string>
+    <string name="vul_FlightNumber">Numero de Vuelo</string>
+    <string name="vul_FlightTime">Hora de Vuelo</string>
+    <string name="vul_ASK_CloseApp">Salir?</string>
+    <string name="vul_Yes">Si</string>
+    <string name="vul_No">No</string>
+    <string name="vul_Save">Guardar</string>
+    <string name="vul_Cancel">Cancelar</string>
+    <string name="vul_Delete">Delete</string>
+    <string name="vul_PersonExists">La Persona ya Existe</string>
+    <string name="vul_PersonSaved">Persona Guardada</string>
+    <string name="vul_FieldsRequired">Todos los Campos son Requeridos</string>
+    <string name="vul_IdRequired">Identificacion Requerida</string>
+    <string name="vul_NameRequired">Nombre Requerido</string>
+    <string name="vul_LastNameRequired">Apellido Requerido</string>
+    <string name="vul_PhoneRequired">Formato de Telefono no Valido</string>
+    <string name="vul_EmailRequired">Formato de Correo Electronico no Valido</string>
+    <string name="vul_AddressRequired">Direccion Requerida</string>
+    <string name="vul_CountryRequired">Pais Requerido</string>
+    <string name="vul_FlightNumberRequired">Numero de Vuelo Requerido</string>
+    <string name="vul_DateRequired">Formato de Fecha no Valido</string>
+    <string name="vul_TimeRequired">Formato de Hora no Valido</string>
+    <string name="vul_DestinationCountryRequired">Pais de Destino Requierido</string>
+    <string name="vul_DeleteDIalog">Eliminar Contacto?</string>
+    <string name="vul_Confirmation">Confirmacion</string>
+
+    <!--Capacitaciones-->
     <string name="cap_AddTraining">Añadir Capacitación</string>
     <string name="cap_ListTraining">Lista Capacitaciones</string>
     <string name="cap_mnu_save">Guardar</string>
@@ -31,6 +228,41 @@
     <string name="cap_ChooseGallery">Elige de la galería</string>
     <string name="cap_msgCameraPermissionDenied">" Permiso de cámara denegado"</string>
     <string name="cap_msgCameraAppAvailable">No hay aplicación de cámara disponible</string>
+
+    <!-- Farmacia-->
+    <string name="far_farm_title_name">Farmacia</string>
+    <string name="far_patient_txt">Paciente</string>
+    <string name="far_medicine_txt">Medicamento</string>
+    <string name="far_quantity_input">Cantidad</string>
+    <string name="far_Add_button">Agregar medicina</string>
+    <string name="far_price_Input">Precio</string>
+    <string name="far_medicine_Input">Nombre de la medicina</string>
+    <string name="far_name_input">Nombre</string>
+    <string name="far_id_input">Identificacion</string>
+    <string name="far_input_lastname">Apellido</string>
+    <string name="far_input_phone">Numero de telefono</string>
+    <string name="far_email_input">Correo electronico</string>
+    <string name="far_address_input">Direccion</string>
+    <string name="far_country_input">Pais</string>
+    <string name="far_Ins_new_Patient">Nuevo paciente</string>
+    <string name="far_success_addMedicine">Medicina agregada</string>
+    <string name="far_txt_failed">Algo fallo</string>
+    <string name="far_crud_add">Agregar</string>
+    <string name="far_success_add">Exito</string>
+    <string name="far_view_list">Ver lista</string>
+    <string name="far_showMedicines">Más detalles</string>
+    <string name="far_show_medicines">Medicinas</string>
+    <string name="far_ok_option">Ok</string>
+    <string name="far_factureNumber">Número de factura</string>
+    <string name="far_delete_option">Borrar</string>
+    <string name="far_success_update">Actualizacion completa</string>
+    <string name="far_takePhoto">Tomar foto</string>
+    <string name="far_Gallery">Galeria</string>
+    <string name="far_selectAnOption">Selecciona una opcion</string>
+    <string name="far_profile_">Perfil</string>
+    <string name="far_photo_profile">Avatar</string>
+
+    <!--Vacaciones-->
     <string name="vac_vaccination_duplicate">El registro de vacunación ya existe.</string>
     <string name="vac_vaccination_saved">Registro de vacunación guardado exitosamente.</string>
     <string name="vac_vaccination_updated">Registro de vacunación actualizado exitosamente.</string>
@@ -82,6 +314,11 @@
     <string name="vac_error_invalid_input">Entrada inválida, por favor revisa los campos.</string>
     <string name="vac_error_missing_fields">Campos faltantes: %1$s</string>
     <string name="vac_error_invalid_phone">Número de teléfono inválido. Debe tener entre 8 y 10 dígitos.</string>
+
+    <!--Citas-->
+
+
+    <!--Biblioteca-->
     <string name="bib_save">Guardar</string>
     <string name="bib_cancel">Cancelar</string>
     <string name="bib_remove">Eliminar</string>
@@ -130,6 +367,8 @@
     <string name="bib_loading_reservation">Cargando reserva con ID: %1$s</string>
     <string name="bib_getting_reservation">Obteniendo reserva con ID: %1$s - Resultado: %2$s</string>
     <string name="bib_reservation_not_found2">No se encontró la reserva con ID: %1$s</string>
+
+    <!--Sinpe-->
     <string name="sin_label_origin_person">Persona de Origen: </string>
     <string name="sin_label_destination_name">Nombre del Destinatario: </string>
     <string name="sin_label_amount">Monto: </string>
@@ -201,4 +440,5 @@
     <string name="subCode">Código</string>
     <string name="sub_success">Añadido</string>
     <string name="subadd">Guardar</string>
+
 </resources>
