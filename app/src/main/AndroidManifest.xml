@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -28,6 +29,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/vac_file_paths" />
         </provider>
+
         <activity
             android:name=".cap_AddActivity"
             android:exported="false"
@@ -79,14 +81,25 @@
             android:name=".sin_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".rec_RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".rec_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".rec_ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".rec_DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

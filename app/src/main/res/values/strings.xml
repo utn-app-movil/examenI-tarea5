@@ -1,6 +1,49 @@
 <resources>
+    <!-- App Name -->
     <string name="app_name">Test 1</string>
 
+    <!-- RecMainActivity Texts -->
+    <string name="rec_button_register">Register Data</string>
+    <string name="rec_button_list">View Record List</string>
+
+    <!-- Activity RecRegisterActivity Texts -->
+    <string name="rec_hint_name">Full Name</string>
+    <string name="rec_hint_last_name">Last Name</string>
+    <string name="rec_hint_phone">Phone</string>
+    <string name="rec_hint_email">Email</string>
+    <string name="rec_hint_address">Address</string>
+    <string name="rec_hint_country">Country</string>
+    <string name="rec_hint_province">Province</string>
+    <string name="rec_hint_canton">Canton</string>
+    <string name="rec_hint_district">District</string>
+    <string name="rec_hint_salary">Wage Expectation</string>
+    <string name="rec_hint_experience">Years of Experience</string>
+    <string name="rec_role_prompt">Role of Interest</string>
+    <string name="rec_button_save">Save</string>
+
+    <!-- Roles for Spinner -->
+    <string name="rec_role_software">Software</string>
+    <string name="rec_role_infrastructure">Infrastructure</string>
+    <string name="rec_role_networks">Networks</string>
+    <string name="rec_role_security">Security</string>
+    <string name="rec_role_qa">QA</string>
+
+    <!-- Toast Messages -->
+    <string name="rec_data_saved">Data saved successfully</string>
+    <string name="rec_fill_all_fields">Please complete all fields</string>
+
+    <!-- RecListActivity Texts -->
+    <string name="rec_list_title">Record List</string>
+    <string name="rec_no_records">No records available</string>
+
+    <!-- RecDetailActivity Texts -->
+    <string name="rec_detail_name">Name:</string>
+    <string name="rec_detail_phone">Phone:</string>
+    <string name="rec_detail_email">Email:</string>
+    <string name="rec_detail_address">Address:</string>
+    <string name="rec_detail_country">Country:</string>
+
+    <!-- Base Project Strings -->
     <string name="cap_AddTraining">Add Training</string>
     <string name="cap_ListTraining">List Training</string>
     <string name="cap_mnu_save">Save</string>
@@ -30,6 +73,8 @@
     <string name="cap_ChooseGallery">Choose from Gallery</string>
     <string name="cap_msgCameraPermissionDenied">Camera permission denied</string>
     <string name="cap_msgCameraAppAvailable">No camera app available</string>
+
+    <!-- Vaccination Module -->
     <string name="vac_vaccination_duplicate">The vaccination record already exists.</string>
     <string name="vac_vaccination_saved">Vaccination record saved successfully.</string>
     <string name="vac_vaccination_updated">Vaccination record updated successfully.</string>
@@ -81,6 +126,8 @@
     <string name="vac_error_invalid_input">Invalid input, please check the fields.</string>
     <string name="vac_error_missing_fields">Missing fields: %1$s</string>
     <string name="vac_error_invalid_phone">Invalid phone number. It must be between 8 and 10 digits.</string>
+
+    <!-- Library Reservations Module -->
     <string name="bib_student_name_hint">Student Name</string>
     <string name="bib_book_code_hint">Book Code</string>
     <string name="bib_book_name_hint">Book Name</string>
@@ -129,6 +176,8 @@
     <string name="bib_loading_reservation">Loading reservation with ID: %1$s</string>
     <string name="bib_getting_reservation">Getting reservation with ID: %1$s - Result: %2$s</string>
     <string name="bib_reservation_not_found2">No reservation found with ID: %1$s</string>
+
+    <!-- SINPE Transaction Module -->
     <string name="sin_label_origin_person">Origin Person: </string>
     <string name="sin_label_destination_name">Destination Name: </string>
     <string name="sin_label_amount">Amount: </string>
@@ -177,4 +226,10 @@
     <string name="sin_confirm_delete">Confirm Delete</string>
     <string name="sin_delete_message">Are you sure you want to delete this SINPE transaction?</string>
     <string name="sin_delete">Delete</string>
+    <string name="candidate_photo">Photo of the candidate</string>
+    <string name="candidate_name">Name of the candidate</string>
+    <string name="selected_image_preview">Selected Image Preview</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="candidate_photo_desc">Photo of the candidate</string>
+
 </resources>
