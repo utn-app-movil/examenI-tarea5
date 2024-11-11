@@ -178,4 +178,17 @@
     <string name="sin_confirm_delete">Confirmar eliminación</string>
     <string name="sin_delete_message">¿Está seguro de que desea eliminar esta transacción SINPE?</string>
     <string name="sin_delete">Eliminar</string>
+
+    //Tcam Español
+    <string name="tcam_PersonName">Nombre completo</string>
+    <string name="tcam_DateTime">Fecha y hora</string>
+    <string name="tcam_ValueChange">Valor de tipo de cambio</string>
+    <string name="tcam_AmountChange">Monto a Cambiar</string>
+    <string name="tcam_CalculateAmount">Calcular monto a pagar</string>
+    <string name="tcam_AmountPay">Monto a pagar:</string>
+    <string name="tcam_addChange">Agregar tipo de cambio</string>
+    <string name="tcam_ViewChanges">Ver tipos de cambio</string>
+    <string name="tcam_Menu_Save">Guardar</string>
+    <string name="tcam_Menu_Delete">Eliminar</string>
+    <string name="tcam_Menu_Cancel">Cancelar</string>
 </resources>
