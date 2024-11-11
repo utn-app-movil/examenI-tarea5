@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Examen I</string>
 
+
     <string name="nav_btn_main_list">Lista de contenedores</string>
     <string name="nav_btn_main_control">Control de contenedores</string>
     <string name="welcome">Bienvenido</string>
@@ -23,6 +24,47 @@
     <string name="Succesdel">eliminacion exitosa</string>
     <string name="Succesupd">Actualizacion exitosa</string>
     <string name="nav_btn_img">Seleccione una imagen</string>
+
+
+    <string name="vul_PersonNotFound">Persona no encontrada</string>
+    <string name="vul_btnAddPerson">Agregar Persona</string>
+    <string name="vul_btnViewList">Ver Lista</string>
+    <string name="vul_btnCustomList">Ver Lista Personalizada</string>
+    <string name="vul_btnCloseDialog">Cerrar aplicacion</string>
+    <string name="vul_Mensaje">Mensaje de Keneth</string>
+    <string name="vul_ID">Identificacion</string>
+    <string name="vul_Name">Name</string>
+    <string name="vul_LastName">Apellido</string>
+    <string name="vul_Phone">Telefono</string>
+    <string name="vul_Email">Correo Electronico</string>
+    <string name="vul_Address">Direccion</string>
+    <string name="vul_Country">Pais</string>
+    <string name="vul_DestinationCountry">Pais de Destino</string>
+    <string name="vul_FlighDate">Fecha de Vuelo</string>
+    <string name="vul_FlightNumber">Numero de Vuelo</string>
+    <string name="vul_FlightTime">Hora de Vuelo</string>
+    <string name="vul_ASK_CloseApp">Salir?</string>
+    <string name="vul_Yes">Si</string>
+    <string name="vul_No">No</string>
+    <string name="vul_Save">Guardar</string>
+    <string name="vul_Cancel">Cancelar</string>
+    <string name="vul_Delete">Delete</string>
+    <string name="vul_PersonExists">La Persona ya Existe</string>
+    <string name="vul_PersonSaved">Persona Guardada</string>
+    <string name="vul_FieldsRequired">Todos los Campos son Requeridos</string>
+    <string name="vul_IdRequired">Identificacion Requerida</string>
+    <string name="vul_NameRequired">Nombre Requerido</string>
+    <string name="vul_LastNameRequired">Apellido Requerido</string>
+    <string name="vul_PhoneRequired">Formato de Telefono no Valido</string>
+    <string name="vul_EmailRequired">Formato de Correo Electronico no Valido</string>
+    <string name="vul_AddressRequired">Direccion Requerida</string>
+    <string name="vul_CountryRequired">Pais Requerido</string>
+    <string name="vul_FlightNumberRequired">Numero de Vuelo Requerido</string>
+    <string name="vul_DateRequired">Formato de Fecha no Valido</string>
+    <string name="vul_TimeRequired">Formato de Hora no Valido</string>
+    <string name="vul_DestinationCountryRequired">Pais de Destino Requierido</string>
+    <string name="vul_DeleteDIalog">Eliminar Contacto?</string>
+    <string name="vul_Confirmation">Confirmacion</string>
 
     <string name="cap_AddTraining">Añadir Capacitación</string>
     <string name="cap_ListTraining">Lista Capacitaciones</string>
