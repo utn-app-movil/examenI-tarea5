@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Colores primarios de la aplicación -->
+    <color name="primaryColor">#6200EE</color> <!-- Púrpura para botones o elementos destacados -->
+    <color name="secondaryColor">#03DAC5</color> <!-- Verde agua para botones secundarios -->
 
-    <color name="primaryColor">#6200EE</color>
-    <color name="secondaryColor">#03DAC5</color>
+    <!-- Colores de texto -->
+    <color name="primaryTextColor">#212121</color> <!-- Color de texto principal, casi negro -->
+    <color name="secondaryTextColor">#757575</color> <!-- Color de texto secundario, gris oscuro -->
 
-    <color name="primaryTextColor">#212121</color>
-    <color name="secondaryTextColor">#757575</color>
-
-    <color name="backgroundColor">#F5F5F5</color>
+    <!-- Color de fondo de pantalla -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Gris claro para fondo de la app -->
 </resources>

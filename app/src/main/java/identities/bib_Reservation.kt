@@ -3,28 +3,31 @@ package cr.ac.utn.appmovil.identities
 import identities.Identifier
 import java.util.Date
 
-class bib_Reservation(
-    id: String = java.util.UUID.randomUUID().toString(),
-    studentName: String,
-    bookCode: String,
-    bookName: String,
-    reservationDate: Date,
-    returnDate: Date,
-    libraryLocation: String,
-    photoUri: String
-) : Identifier() {
+class bib_Reservation : Identifier {
+    var StudentName: String = ""
+    var BookCode: String = ""
+    var BookName: String = ""
+    var ReservationDate: Date = Date()
+    var ReturnDate: Date = Date()
+    var LibraryLocation: String = ""
 
-    init {
+    constructor(
+        id: String,
+        studentName: String,
+        bookCode: String,
+        bookName: String,
+        reservationDate: Date,
+        returnDate: Date,
+        libraryLocation: String
+    ) {
         this.Id = id
+        this.StudentName = studentName
+        this.BookCode = bookCode
+        this.BookName = bookName
+        this.ReservationDate = reservationDate
+        this.ReturnDate = returnDate
+        this.LibraryLocation = libraryLocation
     }
-
-    var StudentName: String = studentName
-    var BookCode: String = bookCode
-    var BookName: String = bookName
-    var ReservationDate: Date = reservationDate
-    var ReturnDate: Date = returnDate
-    var LibraryLocation: String = libraryLocation
-    var PhotoUri: String = photoUri
 
     override val FullDescription: String
         get() = "$StudentName reserved $BookName on $ReservationDate"
