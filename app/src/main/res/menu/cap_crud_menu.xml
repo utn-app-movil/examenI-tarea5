@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cap_mnu_save"
+        android:title="@string/cap_mnu_save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/cap_mnu_delete"
+        android:enabled="true"
+        android:title="@string/cap_mnu_delete"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/cap_mnu_cancel"
+        android:title="@string/cap_mnu_cancel"
+        app:showAsAction="always" />
+</menu>
