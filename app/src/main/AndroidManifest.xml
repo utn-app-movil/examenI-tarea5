@@ -29,6 +29,18 @@
                 android:resource="@xml/vac_file_paths" />
         </provider>
         <activity
+            android:name=".vul_PersonListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vul_PersonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vul_CustomListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vul_MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".cap_AddActivity"
             android:exported="false"
             android:parentActivityName=".cap_MainActivity"/>
