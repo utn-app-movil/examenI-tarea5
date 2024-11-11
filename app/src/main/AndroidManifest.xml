@@ -30,10 +30,6 @@
                 android:resource="@xml/vac_file_paths" />
         </provider>
 
-<<<<<<< HEAD
-        <activity
-            android:name=".cap_AddActivity"
-=======
         <!--Alquiler-->
 
 
@@ -87,7 +83,6 @@
 
         <!--Capacitaciones-->
         <activity android:name=".cap_AddActivity"
->>>>>>> 6d7bcabea42ad4955062d75e5a6d3cd94c757edc
             android:exported="false"
             android:parentActivityName=".cap_MainActivity"/>
         <activity
@@ -120,7 +115,7 @@
         <activity android:name=".sin_ListaActivity" android:exported="false" />
         <activity android:name=".sin_MainActivity"  android:exported="false" />
 
-        <!--Main Activity del profesor-->
+        <!--Reclutamiento-->
         <activity
             android:name=".rec_RegisterActivity"
             android:exported="false" />
@@ -138,13 +133,15 @@
         <activity
             android:name=".rec_DetailActivity"
             android:exported="false" />
+
+        <!--Main Activity del profesor-->
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
-<<<<<<< HEAD
-
 </manifest>
-=======
-</manifest>
->>>>>>> 6d7bcabea42ad4955062d75e5a6d3cd94c757edc
