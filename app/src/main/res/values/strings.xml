@@ -1,5 +1,76 @@
 <resources>
     <string name="app_name">Test 1</string>
+    //btn
+    <string name="nav_btn_main_list">Container List</string>
+    <string name="nav_btn_main_control">Container control</string>
+    <string name="nav_btn_img">Seleccion image</string>
+    //msgsuccess
+    <string name="welcome">Welcome</string>
+    <string name="Succesins">Succes insert</string>
+    <string name="Succesdel">Succes delete</string>
+    <string name="Succesupd">Succes update</string>
+    //msgerr
+    <string name="msgErr">Container not found</string>
+    <string name="msgContDup">Container duplicated</string>
+    //containerSt
+    <string name="nav_id_container">Container Id</string>
+    <string name="nav_nomPers">Person Name</string>
+    <string name="nav_temperature">Temperature</string>
+    <string name="nav_weigth">Weigth</string>
+    <string name="nav_day">Day</string>
+    <string name="nav_Product">Product Name</string>
+    <string name="nav_spinner">Type Of container</string>
+    //Menu
+    <string name="nav_Insert">Insert</string>
+    <string name="nav_update">Update</string>
+    <string name="nav_delete">Delete</string>
+    <string name="nav_list">List</string>
+    //spinner
+    <string-array name="container_types">
+        <item>Humedo</item>
+        <item>Seco</item>
+    </string-array>
+    <string name="Succes">succes</string>
+
+    <string name="vul_PersonNotFound">Person not found</string>
+    <string name="vul_btnAddPerson">Add Person</string>
+    <string name="vul_btnViewList">View List</string>
+    <string name="vul_btnCustomList">View Custom List</string>
+    <string name="vul_btnCloseDialog">Close App</string>
+    <string name="vul_Mensaje">Keneth Message</string>
+    <string name="vul_ID">ID</string>
+    <string name="vul_Name">Name</string>
+    <string name="vul_LastName">Last Name</string>
+    <string name="vul_Phone">Phone</string>
+    <string name="vul_Email">Email</string>
+    <string name="vul_Address">Address</string>
+    <string name="vul_Country">Country</string>
+    <string name="vul_DestinationCountry">Destination Country</string>
+    <string name="vul_FlighDate">Flight Date</string>
+    <string name="vul_FlightNumber">Flight Number</string>
+    <string name="vul_FlightTime">Flight Time</string>
+    <string name="vul_ASK_CloseApp">Close App?</string>
+    <string name="vul_Yes">Yes</string>
+    <string name="vul_No">No</string>
+    <string name="vul_Save">Save</string>
+    <string name="vul_Cancel">Cancel</string>
+    <string name="vul_Delete">Delete</string>
+    <string name="vul_PersonExists">Person Already Exists</string>
+    <string name="vul_PersonSaved">Person Saved Succesfully</string>
+    <string name="vul_FieldsRequired">All Fields Are Required</string>
+    <string name="vul_IdRequired">ID is required</string>
+    <string name="vul_NameRequired">Name is required</string>
+    <string name="vul_LastNameRequired">Last Name Required</string>
+    <string name="vul_PhoneRequired">Phone Format is not Valid</string>
+    <string name="vul_EmailRequired">Email Format not Valid</string>
+    <string name="vul_AddressRequired">Address is Required</string>
+    <string name="vul_CountryRequired">Country is Required</string>
+    <string name="vul_FlightNumberRequired">Flight Number is Required</string>
+    <string name="vul_DateRequired">Date Format not Valid</string>
+    <string name="vul_TimeRequired">Time Format not Valid</string>
+    <string name="vul_DestinationCountryRequired">Destination Country is Required</string>
+    <string name="vul_DeleteDIalog">Delete Contact</string>
+    <string name="vul_Confirmation">Confirmation</string>
 
     <string name="cap_AddTraining">Add Training</string>
     <string name="cap_ListTraining">List Training</string>
