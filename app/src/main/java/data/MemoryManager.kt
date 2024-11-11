@@ -6,14 +6,19 @@ import identities.Identifier
 object MemoryManager: IDBManager {
     private var objectList = mutableListOf<Identifier>()
 
-    override fun add (obj: Identifier){
+    override fun add (obj: Unit){
         objectList.add(obj)
     }
-    override fun update (obj: Identifier){
-        remove(obj.Id)
+    override fun update (obj: Unit){
+        remove(obj.javaClass)
         objectList.add(obj)
 
     }
+
+    private fun remove(javaClass: Class<Unit>) {
+        TODO("Not yet implemented")
+    }
+
     override fun remove (id: String){
         objectList.removeIf { it.Id.trim() == id.trim() }
     }
@@ -41,4 +46,8 @@ object MemoryManager: IDBManager {
             throw e
         }
     }
+}
+
+private fun <E> MutableList<E>.add(element: Unit) {
+    TODO("Not yet implemented")
 }

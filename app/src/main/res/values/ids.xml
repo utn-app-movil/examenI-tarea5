@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnAdd" type="id">Boton</item>
+    <item name="btnUpdate" type="id">Update</item>
+    <item name="btnDelete" type="id">Delete</item>
+    <item name="btnList" type="id">List</item>
+</resources>

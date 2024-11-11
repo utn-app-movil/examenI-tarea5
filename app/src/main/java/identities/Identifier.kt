@@ -1,6 +1,7 @@
 package identities
 
 abstract class Identifier {
+    abstract val lic_medicalReportCodesss: Any
     private var _id: String =""
 
     var Id: String
