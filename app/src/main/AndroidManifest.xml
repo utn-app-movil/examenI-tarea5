@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
         tools:targetApi="34">
+        <!--
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -28,7 +29,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/vac_file_paths" />
         </provider>
-
+        -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="cr.ac.utn.movil.fileprovider"
@@ -48,17 +49,16 @@
             android:exported="false"
             android:parentActivityName=".cap_MainActivity"/>
         <!-- Farmacia_Daniel -->
-
-       <activity
-           android:name=".far_MainActivity"
-           android:exported="false"/>
-       <activity
-           android:name=".far_adding_patient"
-           android:exported="false"/>
-       <activity
-           android:name=".farListLayout"
-           android:exported="false"/>
-       <!-- Farmacia_Daniel -->
+        <activity
+            android:name=".far_MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".far_adding_patient"
+            android:exported="false"/>
+        <activity
+            android:name=".farListLayout"
+            android:exported="false"/>
+        <!-- Farmacia_Daniel -->
         <activity
             android:name=".cap_MainActivity"
             android:exported="false" />
