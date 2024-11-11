@@ -25,7 +25,7 @@ class PersonaModel {
     }
 
     fun getContactbyName(fullName: String): Persona{
-        return Persona()
+       return Persona()
     }
 
     fun getContactNames(): List<String> {
