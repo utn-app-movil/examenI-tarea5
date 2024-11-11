@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Examen I</string>
+    <string name="enf_bnt_save">Los datos se guardaron de forma exitosa</string>
+    <string name="enf_btn_back">Volviendo a la página principal</string>
+    <string name="enf_btn_AddP">Ingresando para añadir un paciente</string>
+    <string name="enf_btn_ViewP">Ingresando para ver la información de los pacientes</string>
+    <string name="enf_btn_add_patient">Ingresnado para añadir un nuevo paciente</string>
+    <string name="enf_btn_back2">Volviendo a la página principal</string>
 </resources>

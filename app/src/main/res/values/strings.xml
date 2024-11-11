@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Test 1</string>
+    <string name="enf_bnt_save">Data is saved successfully</string>
+    <string name="enf_btn_back">Returning to the main page</string>
+    <string name="enf_btn_AddP">Logging in to add a patient</string>
+    <string name="enf_btn_ViewP">Logging in to see patient information</string>
+    <string name="enf_btn_add_patient">Logging in to add a new patient</string>
+    <string name="enf_btn_back2">Returning to the main page</string>
+
 </resources>
