@@ -39,11 +39,10 @@
             android:name=".cap_ListActivity"
             android:exported="false"
             android:parentActivityName=".cap_MainActivity"/>
-        <!-- Farmacia_Daniel
+        <!-- Farmacia_Daniel-->
         <activity
             android:name=".far_MainActivity"
             android:exported="false"/>
-        -->
         <activity
             android:name=".far_adding_patient"
             android:exported="false"/>
@@ -94,7 +93,7 @@
             android:name=".sin_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".far_MainActivity"
+            android:name="MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
