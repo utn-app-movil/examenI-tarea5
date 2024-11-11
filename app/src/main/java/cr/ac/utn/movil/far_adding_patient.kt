@@ -154,7 +154,7 @@ class far_adding_patient : AppCompatActivity() {
             photoFile?.also {
                 val photoURI: Uri = FileProvider.getUriForFile(
                     this,
-                    "cr.ac.utn.movil.fileprovider",
+                    "cr.ac.utn.movil.provider",
                     it
                 )
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI)
