@@ -30,4 +30,5 @@
     <string name="cap_ChooseGallery">Choose from Gallery</string>
     <string name="cap_msgCameraPermissionDenied">Camera permission denied</string>
     <string name="cap_msgCameraAppAvailable">No camera app available</string>
+    <string name="lista_de_empleados">Lista de Empleados</string>
 </resources>
