@@ -60,6 +60,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+<<<<<<< HEAD
     // Para RecyclerView
     implementation (libs.androidx.recyclerview)
 
@@ -68,5 +69,7 @@ dependencies {
 
     // Para ConstraintLayout
     implementation (libs.androidx.constraintlayout)
+=======
+>>>>>>> 4186f466dd932a7107ad69a6fc5e130fccde3ad1
 
 }
