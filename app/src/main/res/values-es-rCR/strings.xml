@@ -468,6 +468,10 @@
     <string name="sin_confirm_delete">Confirmar eliminación</string>
     <string name="sin_delete_message">¿Está seguro de que desea eliminar esta transacción SINPE?</string>
     <string name="sin_delete">Eliminar</string>
-
+    <string name="vul_btnAddPhoto">Añadir Foto</string>
+    <string name="vul_PhotoError">Error al Tomar la Foto</string>
+    <string name="vul_TakePhoto">Tomar Foto</string>
+    <string name="vul_Gallery">Escoger de Galeria</string>
+    <string name="vul_NotCamera">Camara no Disponible</string>
 
 </resources>

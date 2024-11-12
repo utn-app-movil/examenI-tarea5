@@ -196,37 +196,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/vul_btnAddPhoto1"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
-                android:text="@string/vul_FlightTime" />
-
-            <EditText
-                android:id="@+id/vul_txtPersonFlightTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text" />
+                android:text="@string/vul_btnAddPhoto" />
         </TableRow>
-        <Button
-            android:id="@+id/btnTakePhoto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tomar foto de pasaporte" />
 
-        <Button
-            android:id="@+id/btnSelectFromGallery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Seleccionar foto de galería" />
+        <TableRow
+            android:id="@+id/vul_rowImgPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
 
-        <ImageView
-            android:id="@+id/imgPassport"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:contentDescription="Imagen de pasaporte"
-            android:scaleType="centerCrop" />
+            <ImageView
+                android:id="@+id/vul_imgPhoto"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/cap_TrainingPhoto"
+                android:scaleType="centerCrop"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                app:srcCompat="@drawable/cap_img" />
+        </TableRow>
+
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

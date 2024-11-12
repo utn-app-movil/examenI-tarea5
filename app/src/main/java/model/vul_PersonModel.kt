@@ -4,14 +4,14 @@ import android.content.Context
 import cr.ac.utn.appmovil.data.MemoryManager
 import cr.ac.utn.appmovil.interfaces.IDBManager
 import cr.ac.utn.movil.R
-import cr.ac.utn.appmovil.vuelos.vul_Person
+import identities.vul_Person
 
 class vul_PersonModel(context: Context) {
     private var dbManager: IDBManager = MemoryManager
     private val _context: Context = context
 
-    fun addPerson(training: vul_Person) {
-        dbManager.add(training)
+    fun addPerson(person: vul_Person) {
+        dbManager.add(person)
     }
 
     fun getPersons(): List<vul_Person> {
@@ -36,8 +36,8 @@ class vul_PersonModel(context: Context) {
         dbManager.remove(id)
     }
 
-    fun updatePerson(training: vul_Person) {
-        dbManager.update(training)
+    fun updatePerson(person: vul_Person) {
+        dbManager.update(person)
     }
 
     fun getPersonByFullDescription(fullDescription: String): vul_Person? {
