@@ -1,0 +1,106 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventoryActivity">
+
+
+ <EditText
+     android:id="@+id/inv_productCode"
+     android:hint="Product Code"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+
+ <EditText
+     android:id="@+id/inv_productName"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="8dp"
+     android:hint="Product Name"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="1.0"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/inv_productCode" />
+
+ <EditText
+     android:id="@+id/inv_quantity"
+     android:hint="Quantity"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@+id/inv_productName"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+
+ <EditText
+     android:id="@+id/inv_supplierName"
+     android:hint="Supplier Name"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@+id/inv_quantity"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+ <EditText
+     android:id="@+id/inv_unitCost"
+     android:hint="Unit Cost"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@+id/inv_supplierName"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+ <ImageView
+     android:id="@+id/iv_productImage"
+     android:layout_width="100dp"
+     android:layout_height="100dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.498"
+     app:layout_constraintStart_toStartOf="parent"
+     tools:layout_editor_absoluteY="242dp" />
+
+ <androidx.recyclerview.widget.RecyclerView
+     android:id="@+id/rv_productList"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="28dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.0"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/iv_productImage" />
+
+ <Button
+     android:id="@+id/btn_addProduct"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Add Product"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.498"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/rv_productList" />
+
+ <Button
+     android:id="@+id/btn_updateProduct"
+     android:text="Update Product"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@+id/btn_addProduct"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+ <Button
+     android:id="@+id/btn_deleteProduct"
+     android:text="Delete Product"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toBottomOf="@+id/btn_updateProduct"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
