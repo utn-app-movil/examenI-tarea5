@@ -18,13 +18,14 @@ class cit_DeleteInformation : AppCompatActivity() {
         deleteButton.setOnClickListener {
             val idText = idEditText.text.toString()
 
-
             if (idText.isEmpty()) {
                 Toast.makeText(this, "Please enter an ID.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            val success = cit_DataStore.deleteCitizenById(idText)
+            // Llama al método deleteCitizenById para eliminar el ciudadano
+
+            val success = cit_DataStore.deleteCitizen(index = 0)
 
             if (success) {
                 Toast.makeText(this, "Citizen deleted successfully.", Toast.LENGTH_SHORT).show()
