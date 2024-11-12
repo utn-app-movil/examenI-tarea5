@@ -34,12 +34,29 @@
 
 
         <!--Eventos-->
-
+        <activity android:name=".eve_ListActivity" android:exported="false" />
+        <activity android:name=".eve_ViewActivity" android:exported="false" />
+        <activity android:name=".eve_AddActivity" android:exported="false" />
+        <activity android:name=".eve_MainActivity" android:exported="true"/>
 
         <!--Reclutamiento-->
 
 
         <!--Subasta-->
+        <activity
+            android:name=".subListCustom"
+            android:exported="false" />
+        <activity
+            android:name=".subList"
+            android:exported="false" />
+
+        <activity
+            android:name=".sub_principalMain"
+            android:exported="false" />
+
+        <activity
+            android:name=".sub_main"
+            android:exported="false" />
 
 
         <!--Nomina-->
