@@ -23,20 +23,19 @@ class enf_MainActivity_enf : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         enf_btn_AddP.setOnClickListener {
-            //val intent = Intent(this, activity_enf_main_enf::class.java)
+            val intent = Intent(this, addPatiendActivity::class.java)
             startActivity(intent)
         }
 
         enf_btn_ViewP.setOnClickListener {
-            //val intent = Intent(this, activity_enf_view::class.java)
+            val intent = Intent(this, viewPatiendActivity::class.java)
             startActivity(intent)
         }
     }
 }
 
-class AgregarPacienteActivity : AppCompatActivity() {
+class addPatiendActivity : AppCompatActivity() {
 
     private lateinit var et_id: EditText
     private lateinit var et_name: EditText
@@ -56,25 +55,25 @@ class AgregarPacienteActivity : AppCompatActivity() {
 
         enf_btn_save.setOnClickListener {
             val id = et_id.text.toString()
-            val nombre = et_name.text.toString()
-            val apellido = et_surname.text.toString()
-            guardarPaciente(id, nombre, apellido)
-            val intent = Intent(this, MainActivity::class.java)
+            val name = et_name.text.toString()
+            val surname = et_surname.text.toString()
+            savePatiend(id, name, surname)
+            val intent = Intent(this, enf_MainActivity_enf::class.java)
             startActivity(intent)
         }
 
         enf_btn_back.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, enf_MainActivity_enf::class.java)
             startActivity(intent)
         }
     }
 
-    private fun guardarPaciente(id: String, nombre: String, apellido: String) {
+    private fun savePatiend(id: String, name: String, surname: String) {
 
     }
 }
 
-class VerPacientesActivity : AppCompatActivity() {
+class viewPatiendActivity : AppCompatActivity() {
     private lateinit var enf_btn_add_patient: Button
     private lateinit var enf_btn_back2: Button
 
@@ -87,12 +86,12 @@ class VerPacientesActivity : AppCompatActivity() {
 
 
         enf_btn_add_patient.setOnClickListener {
-            val intent = Intent(this, AgregarPacienteActivity::class.java)
+            val intent = Intent(this, addPatiendActivity::class.java)
             startActivity(intent)
         }
 
         enf_btn_back2.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, enf_MainActivity_enf::class.java)
             startActivity(intent)
         }
     }

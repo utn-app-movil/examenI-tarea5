@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Este es el directorio donde se guardarán las fotos de la cámara -->
+    <external-path
+        name="Cen_external_files"
+        path="." />
+</paths>
