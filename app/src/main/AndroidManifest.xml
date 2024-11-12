@@ -40,6 +40,20 @@
 
 
         <!--Subasta-->
+        <activity
+            android:name=".subListCustom"
+            android:exported="false" />
+        <activity
+            android:name=".subList"
+            android:exported="false" />
+
+        <activity
+            android:name=".sub_principalMain"
+            android:exported="false" />
+
+        <activity
+            android:name=".sub_main"
+            android:exported="false" />
 
 
         <!--Nomina-->
