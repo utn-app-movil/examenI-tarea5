@@ -93,8 +93,18 @@
             android:parentActivityName=".tcam_MainActivity" />
 
         <!--Servicio de correo-->
-        <activity android:name=".ema_mailDetailActivity" android:exported="false" /><activity android:name=".ema_listEmail" android:exported="false" />
-        <activity android:name=".ema_EmailActivity" android:exported="false" /><activity android:name=".ema_MainActivity" android:exported="true" />
+        <activity
+            android:name=".ema_mailDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ema_listEmail"
+            android:exported="false" />
+        <activity
+            android:name=".ema_EmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ema_MainActivity"
+            android:exported="true" />
 
         <!--Contribución Dashboard-->
 
