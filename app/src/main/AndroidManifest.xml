@@ -34,7 +34,10 @@
 
 
         <!--Eventos-->
-
+        <activity android:name=".eve_ListActivity" android:exported="false" />
+        <activity android:name=".eve_ViewActivity" android:exported="false" />
+        <activity android:name=".eve_AddActivity" android:exported="false" />
+        <activity android:name=".eve_MainActivity" android:exported="true"/>
 
         <!--Reclutamiento-->
 
