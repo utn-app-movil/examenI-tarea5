@@ -29,6 +29,9 @@
                 android:resource="@xml/vac_file_paths" />
         </provider>
         <activity
+            android:name=".InventoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".cap_AddActivity"
             android:exported="false"
             android:parentActivityName=".cap_MainActivity"/>

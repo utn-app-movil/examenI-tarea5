@@ -1,24 +1,18 @@
-package adapters
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import cr.ac.utn.movil.R
 import cr.ac.utn.appmovil.identities._invProduct
-import kotlinx.android.synthetic.main.activity_inventory.view.inv_productName
-import kotlinx.android.synthetic.main.activity_inventory.view.inv_quantity
-import kotlinx.android.synthetic.main.activity_inventory.view.inv_supplierName
-import kotlinx.android.synthetic.main.item_product.view.*
 
 class ProductAdapter(private val products: List<_invProduct>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
     inner class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(product: _invProduct) {
-            itemView.inv_productName.text = product.productName
-           itemView.inv_quantity.text = "quantity: ${product.quantity}"
-            itemView.inv_supplierName.text = "supplier: ${product.supplierName}"
-
+            itemView.findViewById<TextView>(R.id.inv_productName).text = product.productName
+            itemView.findViewById<TextView>(R.id.inv_quantity).text = "quantity: ${product.quantity}"
+            itemView.findViewById<TextView>(R.id.inv_supplierName).text = "supplier: ${product.supplierName}"
         }
     }
 
