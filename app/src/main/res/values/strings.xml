@@ -1,4 +1,4 @@
-<resources><resources>
+<resources>
     <!-- App Name -->
     <string name="app_name">Test 1</string>
     <!--Alquiler-->
@@ -483,5 +483,5 @@
     <string name="sin_confirm_delete">Confirm Delete</string>
     <string name="sin_delete_message">Are you sure you want to delete this SINPE transaction?</string>
     <string name="sin_delete">Delete</string>
-    >>>>>>> main
-</resources></resources>
+
+</resources>

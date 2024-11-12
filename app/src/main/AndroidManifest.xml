@@ -48,7 +48,6 @@
         <activity
             android:name=".subListCustom"
             android:exported="false" />
-        >>>>>>> main
         <activity
             android:name=".subList"
             android:exported="false" />
