@@ -110,7 +110,35 @@
     </string-array>
 
     <!--Servicio de correo-->
-
+    <string name="ema_btnaddemail">Agregar Correo</string>
+    <string name="ema_btnviewemail">"Ver lista de correos "</string>
+    <string name="mnusave">Guardar</string>
+    <string name="mnuremove">Remover</string>
+    <string name="mnucancel">Cancelar</string>
+    <string name="EmailContactId">"Emisor "</string>
+    <string name="EmailMessage">Mensaje</string>
+    <string name="EmailSendDate">Fecha</string>
+    <string name="EmailCC">CC</string>
+    <string name="EmailBCC">CCO</string>
+    <string name="buttonSave">Guardar</string>
+    <string name="msgSave">"Informacion Guardada Correctamente "</string>
+    <string name="msgMissingData">"Datos no encontrados "</string>
+    <string name="msgDelete">"Eliminado "</string>
+    <string name="msgEmailIdMissing">...</string>
+    <string name="EmailTitle">Titulo del Mensaje</string>
+    <string name="ema_EmailImage">Imagen</string>
+    <string name="ema_msgdate">La fecha debe ser posterior a la fecha actual.</string>
+    <string name="ema_formdate">Formato de fecha inválido. Use el formato yyyy-MM-dd.</string>
+    <string name="ema_msgcomplete">Por favor, complete todos los campos obligatorios.</string>
+    <string name="ema_confdel">Confirmar eliminación</string>
+    <string name="ema_msgdelconf">¿Está seguro de que desea eliminar este correo?</string>
+    <string name="ema_yes">Si</string>
+    <string name="ema_no">No</string>
+    <string name="ema_confupdate">Confirmar actualizacion</string>
+    <string name="ema_msgconfupdate">¿Está seguro de que desea actualizar este correo?</string>
+    <string name="ema_msgUpdateSuccess">Correo actualizado correctamente</string>
+    <string name="ema_msgErrorCaptureImg">"Error al capturar la imagen "</string>
+    <string name="ema_msgErrorPickImg">Error al seleccionar la imagen</string>
 
     <!--Contribución Dashboard-->
 
@@ -447,5 +475,9 @@
     <string name="sin_delete_message">¿Está seguro de que desea eliminar esta transacción SINPE?</string>
     <string name="sin_delete">Eliminar</string>
 
+<<<<<<< HEAD
 >>>>>>> 3db4832095d33fc353f9d795e53b744977c57f06
+=======
+
+>>>>>>> 6123172ffac0e0ea5b880640d1ec47ddae413bba
 </resources>
