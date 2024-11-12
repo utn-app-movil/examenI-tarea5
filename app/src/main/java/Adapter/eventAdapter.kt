@@ -15,22 +15,23 @@ class EventAdapter(
 ) : RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
 
     inner class EventViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val txtEventName: TextView = itemView.findViewById(R.id.txtEventName)
-        val btnEdit: Button = itemView.findViewById(R.id.btnEdit)
-        val btnDelete: Button = itemView.findViewById(R.id.btnDelete)
+//        val txtEventName: TextView = itemView.findViewById(R.id.txtEventName)
+//        val btnEdit: Button = itemView.findViewById(R.id.btnEdit)
+//        val btnDelete: Button = itemView.findViewById(R.id.btnDelete)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.event_item, parent, false)
-        return EventViewHolder(view)
+//        val view = LayoutInflater.from(parent.context)
+//            .inflate(R.layout.event_item, parent, false)
+//        return EventViewHolder(view)
+        return EventViewHolder(parent)
     }
 
     override fun onBindViewHolder(holder: EventViewHolder, position: Int) {
         val event = events[position]
-        holder.txtEventName.text = event.id
-        holder.btnEdit.setOnClickListener { onEditClick(event) }
-        holder.btnDelete.setOnClickListener { onDeleteClick(event) }
+//        holder.txtEventName.text = event.id
+//        holder.btnEdit.setOnClickListener { onEditClick(event) }
+//        holder.btnDelete.setOnClickListener { onDeleteClick(event) }
     }
 
     override fun getItemCount(): Int = events.size

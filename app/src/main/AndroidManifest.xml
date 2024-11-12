@@ -18,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
-        tools:targetApi="34">
+        tools:targetApi="35">
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -34,7 +34,7 @@
 
 
         <!--Eventos-->
-        <activity android:name=".eve_ListActivity" android:exported="false" />
+        <activity android:name=".Eve_ListActivity" android:exported="false" />
         <activity android:name=".eve_ViewActivity" android:exported="false" />
         <activity android:name=".eve_AddActivity" android:exported="false" />
         <activity android:name=".eve_MainActivity" android:exported="true"/>

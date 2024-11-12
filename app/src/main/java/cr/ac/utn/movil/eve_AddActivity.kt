@@ -62,16 +62,16 @@ class eve_AddActivity : AppCompatActivity() {
             }
 
             // Creación de un nuevo evento
-            val event = Event(
-                name = eventName,
-                location = eventLocation,
-                date = eventDate,
-                time = eventTime,
-                type = eventType
-            )
+//            val event = Event(
+//                name = eventName,
+//                location = eventLocation,
+//                date = eventDate,
+//                time = eventTime,
+//                type = eventType
+//            )
 
             // Guardar el evento en el modelo
-            EventoModel.AddEvento(event)
+//            EventoModel.AddEvento(event)
             Toast.makeText(this, "Evento guardado exitosamente.", Toast.LENGTH_LONG).show()
 
             // Limpieza del formulario

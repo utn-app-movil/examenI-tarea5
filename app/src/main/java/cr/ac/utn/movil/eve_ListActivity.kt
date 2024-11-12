@@ -41,7 +41,7 @@ class Eve_ListActivity : AppCompatActivity() {
     private fun loadEvents() {
         // Simular carga desde una base de datos
         events.clear()
-        events.addAll(EventoModel.getAllEvents()) // Reemplazar con la lógica de tu base de datos
+        //events.addAll(EventoModel.getAllEvents()) // Reemplazar con la lógica de tu base de datos
         adapter.notifyDataSetChanged()
     }
 
@@ -56,7 +56,7 @@ class Eve_ListActivity : AppCompatActivity() {
             .setTitle("Eliminar Evento")
             .setMessage("¿Estás seguro de que deseas eliminar el evento '${event.id}'?")
             .setPositiveButton("Eliminar") { _, _ ->
-                EventoModel.deleteEvent(event.id) // Lógica para eliminar el evento
+                //EventoModel.deleteEvent(event.id) // Lógica para eliminar el evento
                 loadEvents()
                 Toast.makeText(this, "Evento eliminado", Toast.LENGTH_SHORT).show()
             }
