@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_Control_Container">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mnuCrud"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:title="@string/app_name" />
+
+    <!-- Contenedor principal para la tabla -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:layout_marginBottom="260dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <!-- Número del Contenedor -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/label_container_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_containerNum" />
+
+            <EditText
+                android:id="@+id/nav_contNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/nav_containerNum"
+                android:inputType="text" />
+        </TableRow>
+
+        <!-- Persona que realizó el mantenimiento -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/label_person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_nomPer" />
+
+            <EditText
+                android:id="@+id/nav_person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/nav_nomPer"
+                android:inputType="text" />
+        </TableRow>
+
+        <!-- Fecha del mantenimiento -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txt_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_dayTxt" />
+
+        </TableRow>
+
+        <!-- Hora del mantenimiento -->
+        <TableRow/>
+
+        <!-- Tipo de Contenedor -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/nav_typeCont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_typeCont" />
+
+            <Spinner
+                android:id="@+id/nav_Spiner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/datos" />
+        </TableRow>
+
+        <!-- Temperatura del Contenedor -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/label_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_tempCont" />
+
+            <EditText
+                android:id="@+id/nav_temp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/nav_tempCont"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <!-- Peso del Contenedor -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/label_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_weight" />
+
+            <EditText
+                android:id="@+id/nav_weight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/nav_weight"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <!-- Producto en el Contenedor -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/label_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_Product" />
+
+            <EditText
+                android:id="@+id/nav_product"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/nav_Product"
+                android:inputType="text" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

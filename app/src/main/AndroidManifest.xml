@@ -2,12 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +23,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenI"
-        tools:targetApi="34">
+        tools:targetApi="34"
+        tools:ignore="SelectedPhotoAccess">
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -26,30 +33,26 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/vac_file_paths" />
+                android:resource="@xml/file_paths" />
         </provider>
+
         <activity
-            android:name=".vul_PersonListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".vul_PersonActivity"
-            android:exported="false" />
-        <activity
-            android:name=".vul_CustomListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".vul_MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".cap_AddActivity"
+            android:name=".bib_ReservationAdapter"
             android:exported="false"
-            android:parentActivityName=".cap_MainActivity"/>
+            android:theme="@style/Theme.ExamenI" />
         <activity
-            android:name=".cap_ListActivity"
-            android:exported="false"
-            android:parentActivityName=".cap_MainActivity"/>
+            android:name="cr.ac.utn.appmovil.bib_MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".cap_MainActivity"
+            android:name=".bib_Lista"
+            android:exported="false" />
+        <activity
+            android:name=".bib_CRUD"
             android:exported="false" />
         <activity
             android:name=".cen_MainActivity"
@@ -61,44 +64,14 @@
             android:name=".lic_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".vac_FormActivity"
-            android:exported="false" />
-        <activity
-            android:name=".vac_ListActivity"
-            android:exported="false" />
-        <activity
             android:name=".vac_MainActivity"
             android:exported="false" />
         <activity
             android:name=".cit_MainActivity"
             android:exported="false" />
         <activity
-            android:name=".bib_Lista"
-            android:exported="false" />
-        <activity
-            android:name=".bib_CRUD"
-            android:exported="false" />
-        <activity
-            android:name=".bib_MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sin_CRUD"
-            android:exported="false" />
-        <activity
-            android:name=".sin_ListaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".sin_MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
