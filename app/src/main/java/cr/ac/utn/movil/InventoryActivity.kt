@@ -1,6 +1,7 @@
 package cr.ac.utn.movil
 
 
+import Adapter.ProductAdapter
 import android.app.AlertDialog
 import android.content.Intent
 import android.graphics.Bitmap
@@ -14,7 +15,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import adapters.ProductAdapter
 import cr.ac.utn.appmovil.identities._invProduct
 import cr.ac.utn.appmovil.model._invProductModel
 import java.text.SimpleDateFormat

@@ -46,10 +46,12 @@
 
 
         <!--Inventario-->
-
+        <activity
+            android:name=".InventoryActivity"
+            android:exported="false"/>
 
         <!--Tipo Cambio-->
-        <activity
+       <activity
 <<<<<<< HEAD
             android:name=".InventoryActivity"
             android:exported="false" />
