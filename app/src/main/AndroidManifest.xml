@@ -6,10 +6,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
-
 
     <application
         android:allowBackup="true"
@@ -77,19 +75,8 @@
             android:parentActivityName=".tcam_MainActivity" />
 
         <!--Servicio de correo-->
-        <activity
-            android:name=".ema_mailDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ema_listEmail"
-            android:exported="false" />
-        <activity
-            android:name=".ema_EmailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ema_MainActivity"
-            android:exported="true" />
-
+        <activity android:name=".ema_mailDetailActivity" android:exported="false" /><activity android:name=".ema_listEmail" android:exported="false" />
+        <activity android:name=".ema_EmailActivity" android:exported="false" /><activity android:name=".ema_MainActivity" android:exported="true" />
 
         <!--Contribución Dashboard-->
 
@@ -180,6 +167,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 </manifest>

@@ -108,41 +108,7 @@
 
     <!--Servicio de correo-->
 
-    <string name="ema_btnaddemail">Add Email</string>
-    <string name="ema_btnviewemail">View List Email</string>
 
-
-    <string name="mnusave">Save</string>
-    <string name="mnuremove">Remove</string>
-    <string name="mnucancel">Cancel</string>
-
-
-    <string name="EmailContactId">Person ID</string>
-    <string name="EmailMessage">Email Message</string>
-    <string name="EmailTitle">Email Title</string>
-    <string name="EmailSendDate">Send Date </string>
-    <string name="EmailCC">CC </string>
-    <string name="EmailBCC">CCO </string>
-    <string name="buttonSave">Save</string>
-
-
-    <string name="msgSave">Inf save</string>
-    <string name="msgMissingData">Data is no fount</string>
-    <string name="msgDelete">Delete</string>
-    <string name="msgEmailIdMissing">Email Missing</string>
-    <string name="ema_EmailImage">Image</string>
-    <string name="ema_msgdate">The date must be later than the current date.</string>
-    <string name="ema_formdate">Invalid date format. Use the format yyyy-MM-dd.</string>
-    <string name="ema_msgcomplete">Please complete all required fields.</string>
-    <string name="ema_confdel">Confirm deletion</string>
-    <string name="ema_msgdelconf">Are you sure you want to delete this email?</string>
-    <string name="ema_yes">Yes</string>
-    <string name="ema_no">No</string>
-    <string name="ema_confupdate">Confirm update</string>
-    <string name="ema_msgconfupdate">Are you sure you want to update this email?</string>
-    <string name="ema_msgUpdateSuccess">Email updated successfully</string>
-    <string name="ema_msgErrorCaptureImg">Error Capture Image</string>
-    <string name="ema_msgErrorPickImg">Error Pick Image</string>
     <!--Contribución Dashboard-->
 
 
@@ -293,7 +259,6 @@
     <string name="cap_ChooseGallery">Choose from Gallery</string>
     <string name="cap_msgCameraPermissionDenied">Camera permission denied</string>
     <string name="cap_msgCameraAppAvailable">No camera app available</string>
-
 
     <!-- Farmacia-->
     <string name="far_farm_title_name">Pharmacy</string>
@@ -483,5 +448,41 @@
     <string name="sin_confirm_delete">Confirm Delete</string>
     <string name="sin_delete_message">Are you sure you want to delete this SINPE transaction?</string>
     <string name="sin_delete">Delete</string>
+
+    <string name="ema_btnaddemail">Add Email</string>
+    <string name="ema_btnviewemail">View List Email</string>
+
+
+    <string name="mnusave">Save</string>
+    <string name="mnuremove">Remove</string>
+    <string name="mnucancel">Cancel</string>
+
+
+    <string name="EmailContactId">Person ID</string>
+    <string name="EmailMessage">Email Message</string>
+    <string name="EmailTitle">Email Title</string>
+    <string name="EmailSendDate">Send Date </string>
+    <string name="EmailCC">CC </string>
+    <string name="EmailBCC">CCO </string>
+    <string name="buttonSave">Save</string>
+
+
+    <string name="msgSave">Inf save</string>
+    <string name="msgMissingData">Data is no fount</string>
+    <string name="msgDelete">Delete</string>
+    <string name="msgEmailIdMissing">Email Missing</string>
+    <string name="ema_EmailImage">Image</string>
+    <string name="ema_msgdate">The date must be later than the current date.</string>
+    <string name="ema_formdate">Invalid date format. Use the format yyyy-MM-dd.</string>
+    <string name="ema_msgcomplete">Please complete all required fields.</string>
+    <string name="ema_confdel">Confirm deletion</string>
+    <string name="ema_msgdelconf">Are you sure you want to delete this email?</string>
+    <string name="ema_yes">Yes</string>
+    <string name="ema_no">No</string>
+    <string name="ema_confupdate">Confirm update</string>
+    <string name="ema_msgconfupdate">Are you sure you want to update this email?</string>
+    <string name="ema_msgUpdateSuccess">Email updated successfully</string>
+    <string name="ema_msgErrorCaptureImg">Error Capture Image</string>
+    <string name="ema_msgErrorPickImg">Error Pick Image</string>
 
 </resources>
