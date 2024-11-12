@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mnu_save"
+        android:title="@string/bib_save"
+        android:icon="@drawable/ic_save"
+        android:iconTint="@color/menuIconColor"
+        app:showAsAction="ifRoom"
+        android:background="?attr/selectableItemBackground" />
+
+    <item
+        android:id="@+id/mnu_delete"
+        android:title="@string/bib_remove"
+        android:icon="@drawable/ic_delete"
+        android:iconTint="@color/menuIconColor"
+        android:enabled="false"
+        app:showAsAction="always"
+        android:background="?attr/selectableItemBackground" />
+
+    <item
+        android:id="@+id/mnu_cancel"
+        android:title="@string/bib_cancel"
+        android:icon="@drawable/ic_cancel"
+        android:iconTint="@color/menuIconColor"
+        app:showAsAction="always"
+        android:background="?attr/selectableItemBackground" />
+</menu>
