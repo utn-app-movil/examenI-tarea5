@@ -59,6 +59,29 @@
     <string name="candidate_photo_desc">Foto del candidato</string>
 
     <!--Subasta-->
+    <string name="sub_title">Subasta</string>
+    <string name="sub_btn_imagenadd">Agregar imagen</string>
+    <string name="sub_nameperson">Nombre</string>
+    <string name="sub_LastNperson">Apellido</string>
+    <string name="sub_Phoneperson">Número de teléfono</string>
+    <string name="sub_emailperson">Correo Electronico</string>
+    <string name="sub_Addressperson">Dirección</string>
+    <string name="sub_Countryperson">País</string>
+    <string name="sub_about_Auction">Información sobre la subasta</string>
+    <string name="sub_date">Fecha</string>
+    <string name="sub_hour">Hora</string>
+    <string name="sub_amout">Monto</string>
+    <string name="sub_desc">Descripcion</string>
+    <string name="sub_selled_Question">Vendido</string>
+    <string name="sub_addBTN">Agregar</string>
+    <string name="sub_gointToadd">Agregar persona</string>
+    <string name="sub_GointTo_list">Ver la lista</string>
+    <string name="sub_photo_select">Camara</string>
+    <string name="sub_gallery_select">Galeria</string>
+    <string name="sub_selectOption">Selecciona  una opcion</string>
+    <string name="subCode">Código</string>
+    <string name="sub_success">Añadido</string>
+    <string name="subadd">Guardar</string>
 
 
     <!--Nomina-->
@@ -417,28 +440,5 @@
     <string name="sin_confirm_delete">Confirmar eliminación</string>
     <string name="sin_delete_message">¿Está seguro de que desea eliminar esta transacción SINPE?</string>
     <string name="sin_delete">Eliminar</string>
-    <string name="sub_title">Subasta</string>
-    <string name="sub_btn_imagenadd">Agregar imagen</string>
-    <string name="sub_nameperson">Nombre</string>
-    <string name="sub_LastNperson">Apellido</string>
-    <string name="sub_Phoneperson">Número de teléfono</string>
-    <string name="sub_emailperson">Correo Electronico</string>
-    <string name="sub_Addressperson">Dirección</string>
-    <string name="sub_Countryperson">País</string>
-    <string name="sub_about_Auction">Información sobre la subasta</string>
-    <string name="sub_date">Fecha</string>
-    <string name="sub_hour">Hora</string>
-    <string name="sub_amout">Monto</string>
-    <string name="sub_desc">Descripcion</string>
-    <string name="sub_selled_Question">Vendido</string>
-    <string name="sub_addBTN">Agregar</string>
-    <string name="sub_gointToadd">Agregar persona</string>
-    <string name="sub_GointTo_list">Ver la lista</string>
-    <string name="sub_photo_select">Camara</string>
-    <string name="sub_gallery_select">Galeria</string>
-    <string name="sub_selectOption">Selecciona  una opcion</string>
-    <string name="subCode">Código</string>
-    <string name="sub_success">Añadido</string>
-    <string name="subadd">Guardar</string>
 
 </resources>
