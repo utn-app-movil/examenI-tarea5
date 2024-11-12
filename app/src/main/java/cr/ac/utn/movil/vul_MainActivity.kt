@@ -8,12 +8,11 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import cr.ac.utn.appmovil.util.util
-
+import androidx.appcompat.app.AlertDialog
 
 class vul_MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,24 +25,24 @@ class vul_MainActivity : AppCompatActivity() {
             insets
         }
 
-        val btnvulAddActivity: Button = findViewById<Button>(R.id.vul_btnMainAddPerson)
-        btnvulAddActivity.setOnClickListener(View.OnClickListener { view ->
+        val btnvulPerson: Button = findViewById<Button>(R.id.vul_btnMainAddPerson)
+        btnvulPerson.setOnClickListener(View.OnClickListener { view ->
             util.openActivity(this, vul_PersonActivity::class.java)
         })
 
-        val btnvulListActivity: Button = findViewById<Button>(R.id.vul_btnMainViewPersons)
-        btnvulListActivity.setOnClickListener(View.OnClickListener { view ->
+        val btnvulPersonList: Button = findViewById<Button>(R.id.vul_btnMainViewPersons)
+        btnvulPersonList.setOnClickListener(View.OnClickListener { view ->
             util.openActivity(this, vul_PersonListActivity::class.java)
+        })
+
+        val btnvulPersonCustomList: Button = findViewById<Button>(R.id.vul_btnCustomList)
+        btnvulPersonCustomList.setOnClickListener(View.OnClickListener { view ->
+            util.openActivity(this, vul_CustomListActivity::class.java)
         })
 
         val btnMainDialog = findViewById<Button>(R.id.btnMainDialog)
         btnMainDialog.setOnClickListener(View.OnClickListener {
             DisplayDialog()
-        })
-
-        val btnLlamarCustomList= findViewById<Button>(R.id.vul_btnCustomList)
-        btnLlamarCustomList.setOnClickListener(View.OnClickListener {
-            util.openActivity(this, vul_CustomListActivity::class.java)
         })
     }
 
@@ -59,7 +58,7 @@ class vul_MainActivity : AppCompatActivity() {
                 util.openActivity(this, vul_PersonActivity::class.java)
                 true
             }
-            R.id.vul_menu_personList-> {
+            R.id.cap_mnu_ListTraining-> {
                 util.openActivity(this, vul_PersonListActivity::class.java)
                 true
             }

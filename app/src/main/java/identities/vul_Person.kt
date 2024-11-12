@@ -1,38 +1,64 @@
-package cr.ac.utn.appmovil.vuelos
+package identities
 
-import android.net.Uri
-import cr.ac.utn.appmovil.identities.Persona
+import android.graphics.Bitmap
 
-class vul_Person : Persona {
-    var vul_destinationCountry: String = ""
-    var vul_flightNumber: String = ""
-    var vul_flightDate: String = ""
-    var vul_flightTime: String = ""
-    var passportImageUri: Uri? = null
+class vul_Person(
+    id: String,
+    private var _name: String = "",
+    private var _lastName: String = "",
+    private var _phone: Int = 0,
+    private var _email: String = "",
+    private var _address: String = "",
+    private var _country: String = "",
+    private var _desntinationCountry: String = "",
+    private var _flightnumber: String = "",
+    private var _flighdate: String = "",
+    var photoBitmap: Bitmap? = null // Cambiar de URI a Bitmap
+) : Identifier() {
 
-    constructor() : super()
-
-    constructor(
-        id: String,
-        name: String,
-        lastName: String,
-        phone: Int,
-        email: String,
-        address: String,
-        country: String,
-        destinationCountry: String,
-        flightNumber: String,
-        flightDate: String,
-        flightTime: String,
-        passportImageUri: Uri? = null
-    ) : super(id, name, lastName, phone, email, address, country) {
-        this.vul_destinationCountry = destinationCountry
-        this.vul_flightNumber = flightNumber
-        this.vul_flightDate = flightDate
-        this.vul_flightTime = flightTime
-        this.passportImageUri = passportImageUri
+    init {
+        this.Id = id
     }
 
-    val FlightDescription: String
-        get() = "Flight: $vul_flightNumber from $Country to $vul_destinationCountry on $vul_flightDate at $vul_flightTime"
+    override val FullDescription: String
+        get() = "$_desntinationCountry - $_flightnumber ($_flighdate date)"
+
+    var name: String
+        get() = this._name
+        set(value) { this._name = value }
+
+    var lastName: String
+        get() = this._lastName
+        set(value) { this._lastName = value }
+
+    val fullName: String
+        get() = "$_name $_lastName"
+
+    var phone: Int
+        get() = this._phone
+        set(value) { this._phone = value }
+
+    var email: String
+        get() = this._email
+        set(value) { this._email = value }
+
+    var address: String
+        get() = this._address
+        set(value) { this._address = value }
+
+    var country: String
+        get() = this._country
+        set(value) { this._country = value }
+
+    var desntinationCountry: String
+        get() = this._desntinationCountry
+        set(value) { this._desntinationCountry = value }
+
+    var flightnumber: String
+        get() = this._flightnumber
+        set(value) { this._flightnumber = value }
+
+    var flighdate: String
+        get() = this._flighdate
+        set(value) { this._flighdate = value }
 }

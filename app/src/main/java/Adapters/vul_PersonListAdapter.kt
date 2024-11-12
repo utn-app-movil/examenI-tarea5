@@ -6,8 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import cr.ac.utn.appmovil.vuelos.vul_Person
+
 import cr.ac.utn.movil.R
+import identities.vul_Person
 
 class vul_PersonListAdapter(private val context: Context, private val resource: Int, private val datasource: List<vul_Person>): ArrayAdapter<vul_Person>(context, resource, datasource){
 
@@ -24,9 +25,9 @@ class vul_PersonListAdapter(private val context: Context, private val resource: 
         val  lbEmail = rowView.findViewById(R.id.lbItemEmail) as TextView
 
         val contact = datasource[position] as vul_Person
-        lbPhone.text = contact.Phone.toString()
+        lbPhone.text = contact.phone.toString()
         lbFullname.text = contact.FullDescription
-        lbEmail.text = contact.Email
+        lbEmail.text = contact.email
 
         return rowView
     }
