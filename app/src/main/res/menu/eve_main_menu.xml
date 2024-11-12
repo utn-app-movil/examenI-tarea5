@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/eve_mnu_AddEvent"
+        android:title="@string/eve_AddEvent" />
+    <item
+        android:id="@+id/eve_mnu_ListEvent"
+        android:title="@string/eve_ListEvent" />
+</menu>

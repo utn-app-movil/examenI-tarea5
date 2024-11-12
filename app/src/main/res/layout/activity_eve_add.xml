@@ -1,145 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    tools:context=".eve_AddActivity">
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:padding="16dp">
 
-        <!-- Campo: Nombre del Evento -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="12dp">
+        <!-- Campos de evento -->
+
+        <TableRow>
 
             <TextView
-                android:layout_width="0dp"
+                android:id="@+id/eve_txtIdLabel"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Nombre:"
-                android:textSize="16sp"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="8dp" />
-
+                android:text="@string/eve_EventID" />
             <EditText
-                android:id="@+id/etEventName"
-                android:layout_width="0dp"
+                android:id="@+id/eve_txtId"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:hint="Ejemplo: Concierto de Rock"
-                android:inputType="textPersonName" />
-        </LinearLayout>
-
-        <!-- Campo: Lugar del Evento -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="12dp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Lugar:"
-                android:textSize="16sp"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="8dp" />
-
-            <EditText
-                android:id="@+id/etEventLocation"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:hint="Ejemplo: Auditorio Nacional"
                 android:inputType="text" />
-        </LinearLayout>
+        </TableRow>
 
-        <!-- Campo: Fecha del Evento -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="12dp">
+        <TableRow>
 
             <TextView
-                android:layout_width="0dp"
+                android:id="@+id/eve_txtInstitutionLabel"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Fecha:"
-                android:textSize="16sp"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="8dp" />
-
+                android:text="@string/eve_Institution" />
             <EditText
-                android:id="@+id/etEventDate"
-                android:layout_width="0dp"
+                android:id="@+id/eve_txtInstitution"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:hint="YYYY-MM-DD"
-                android:inputType="date" />
-        </LinearLayout>
+                android:inputType="text" />
+        </TableRow>
 
-        <!-- Campo: Hora del Evento -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="12dp">
+        <TableRow>
 
             <TextView
-                android:layout_width="0dp"
+                android:id="@+id/eve_txtEventLocationLabel"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Hora:"
-                android:textSize="16sp"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="8dp" />
-
+                android:text="@string/eve_EventLocation" />
             <EditText
-                android:id="@+id/etEventTime"
-                android:layout_width="0dp"
+                android:id="@+id/eve_txtEventLocation"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:hint="HH:mm"
-                android:inputType="time" />
-        </LinearLayout>
+                android:inputType="text" />
+        </TableRow>
 
-        <!-- Campo: Tipo de Evento -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="12dp">
+        <TableRow>
 
             <TextView
-                android:layout_width="0dp"
+                android:id="@+id/eve_txtDateTimeLabel"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Tipo:"
-                android:textSize="16sp"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="8dp" />
+                android:text="@string/eve_DateTime" />
+            <EditText
+                android:id="@+id/eve_txtDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="datetime" />
+        </TableRow>
 
+        <TableRow>
+
+            <TextView
+                android:id="@+id/eve_txtSeatNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_SeatNumber" />
+            <EditText
+                android:id="@+id/eve_txtSeatNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/eve_txtEventTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_EventType" />
             <Spinner
-                android:id="@+id/spEventType"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2" />
-        </LinearLayout>
+                android:id="@+id/eve_spnEventType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
 
-        <!-- Botón Guardar -->
-        <Button
-            android:id="@+id/btnSaveEvent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FF9800"
-            android:text="Guardar Evento"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
-</ScrollView>
+        <!-- Campos de Persona (Estudiante) -->
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/eve_txtNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_FirstName" />
+            <EditText
+                android:id="@+id/eve_txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/eve_txtLastNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_LastName" />
+            <EditText
+                android:id="@+id/eve_txtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/eve_txtPhoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_Phone" />
+            <EditText
+                android:id="@+id/eve_txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/eve_txtEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_Email" />
+            <EditText
+                android:id="@+id/eve_txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/eve_txtAddressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_Address" />
+            <EditText
+                android:id="@+id/eve_txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/eve_txtCountryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_Country" />
+            <EditText
+                android:id="@+id/eve_txtCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </TableRow>
+
+        <!-- Imagen del evento -->
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/eve_txtImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_ImageEvent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/eve_rowImgPhoto"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/eve_imgPhoto"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/eve_btnAddPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve_AddPhoto2" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

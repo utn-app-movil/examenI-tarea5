@@ -7,7 +7,34 @@
 
 
     <!--Eventos-->
-
+    <string name="eve_AddEvent">Añadir Evento</string>
+    <string name="eve_ListEvent">Lista Eventos</string>
+    <string name="eve_msgErrorCaptureImg">Imagen de captura fallida</string>
+    <string name="eve_msgErrorPickImg">Imagen de selección fallida</string>
+    <string name="eve_TakePhoto">Anadir foto de Evento</string>
+    <string name="eve_ChooseGallery">Seleccionar de Galeria</string>
+    <string name="eve_AddPhoto2">Añadir Foto</string>
+    <string name="eve_msgCameraPermissionDenied">Permiso de cámara denegado</string>
+    <string name="eve_msgCameraAppAvailable">Aplicación de cámara disponible</string>
+    <string name="eve_msgSave">Guardado</string>
+    <string name="eve_msgMissingData">Datos faltantes</string>
+    <string name="eve_msgDelete">Borrado</string>
+    <string name="eve_EventID">ID Evento</string>
+    <string name="eve_Institution">Institución</string>
+    <string name="eve_EventLocation">Ubicación del Evento</string>
+    <string name="eve_DateTime">Fecha</string>
+    <string name="eve_SeatNumber">Número de Asiento</string>
+    <string name="eve_EventType">Tipo de Evento</string>
+    <string name="eve_FirstName">Nombre</string>
+    <string name="eve_LastName">Apellido</string>
+    <string name="eve_Phone">Telefono</string>
+    <string name="eve_Email">Correo</string>
+    <string name="eve_Address">Dirección</string>
+    <string name="eve_Country">País</string>
+    <string name="eve_ImageEvent">Imagen del evento</string>
+    <string name="eve_mnu_save">Guardar</string>
+    <string name="eve_mnu_delete">Borrar</string>
+    <string name="eve_mnu_cancel">Cancelar</string>
 
     <!--Reclutamiento-->
     <!-- Aquí comienzan las cadenas añadidas de la sección rec -->

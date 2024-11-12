@@ -1,54 +1,58 @@
 package cr.ac.utn.movil
 
-import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import android.content.Intent
-import android.view.View
-import android.widget.Button
+import cr.ac.utn.appmovil.util.util
 
-class eve_MainActivity: AppCompatActivity() {
-
-    @SuppressLint("MissingInflatedId")
+class eve_MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_eve_main)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
-        //Llamados de pantalla
-        val btnadd: Button = findViewById<Button>(R.id.btnAdd)
-        btnadd.setOnClickListener(View.OnClickListener { view ->
-            openActivity(eve_AddActivity::class.java)
-
+        // Botón para abrir eve_AddActivity
+        val btnLlamarEveAddActivity: Button = findViewById<Button>(R.id.eve_btnAddEvent)
+        btnLlamarEveAddActivity.setOnClickListener(View.OnClickListener { view ->
+            util.openActivity(this, eve_AddActivity::class.java)
         })
 
-        val btnview: Button = findViewById<Button>(R.id.btnView)
-        btnview.setOnClickListener(View.OnClickListener { view ->
-            openActivity(eve_ViewActivity::class.java)
-        })
-
-
-        // Inicializando los botones
-        val btnAdd: Button = findViewById(R.id.btnAdd)
-        val btnView: Button = findViewById(R.id.btnView)
-
-        // Configuración del botón btnAdd para ir a Eve_AddActivity
-        btnAdd.setOnClickListener(View.OnClickListener {
-            openActivity(eve_AddActivity::class.java)
-        })
-
-        // Configuración del botón btnView para ir a Eve_ViewActivity
-        btnView.setOnClickListener(View.OnClickListener {
-            openActivity(eve_ViewActivity::class.java)
+        // Botón para abrir eve_ListActivity
+        val btnLlamarEveListActivity: Button = findViewById<Button>(R.id.eve_btnListEvent)
+        btnLlamarEveListActivity.setOnClickListener(View.OnClickListener { view ->
+            util.openActivity(this, eve_ListActivity::class.java)
         })
     }
 
-    // Función para abrir cualquier actividad
-    fun openActivity(activityClass: Class<*>) {
-        val intent = Intent(this, activityClass)
-        startActivity(intent)
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.eve_main_menu, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.eve_mnu_AddEvent -> {
+                util.openActivity(this, eve_AddActivity::class.java)
+                true
+            }
+            R.id.eve_mnu_ListEvent-> {
+                util.openActivity(this, eve_ListActivity::class.java)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 }

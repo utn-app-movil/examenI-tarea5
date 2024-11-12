@@ -1,71 +1,43 @@
 package cr.ac.utn.movil
 
-import android.content.Intent
+import android.annotation.SuppressLint
 import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
+import android.widget.AdapterView
+import android.widget.ListView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import identities.Evento
-import model.EventoModel
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import cr.ac.utn.appmovil.adapters.eve_ListAdapter
+import cr.ac.utn.appmovil.model.eve_EventModel
+import cr.ac.utn.appmovil.util.EXTRA_MESSAGE_ID
+import cr.ac.utn.appmovil.util.util
 
-class Eve_ListActivity : AppCompatActivity() {
-
-    private lateinit var rvEvents: RecyclerView
-    private lateinit var btnAddEvent: Button
-    private lateinit var adapter: EventAdapter
-    private var events = mutableListOf<Evento>()
-
+class eve_ListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_eve_list)
-
-        rvEvents = findViewById(R.id.rvEvents)
-        btnAddEvent = findViewById(R.id.btnAddEvent)
-
-        // Configurar RecyclerView
-        rvEvents.layoutManager = LinearLayoutManager(this)
-        adapter = EventAdapter(events, onEditClick = { editEvent(it) }, onDeleteClick = { deleteEvent(it) })
-        rvEvents.adapter = adapter
-
-        btnAddEvent.setOnClickListener {
-            val intent = Intent(this, eve_AddActivity::class.java)
-            startActivity(intent)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
         }
 
-        loadEvents()
-    }
+        // Inicializa el modelo de eventos
+        val eventModel = eve_EventModel(this)
+        val lstCustomList = findViewById<ListView>(R.id.eve_lstCustomList)
+        val eventList = eventModel.getEvents()
 
-    private fun loadEvents() {
-        // Simular carga desde una base de datos
-        events.clear()
-        events.addAll(EventoModel.getAllEvents()) // Reemplazar con la lógica de tu base de datos
-        adapter.notifyDataSetChanged()
-    }
+        // Configura el adaptador personalizado
+        val adapter = eve_ListAdapter(this, R.layout.eve_event_custom_list, eventList)
+        lstCustomList.adapter = adapter
 
-    private fun editEvent(event: Evento) {
-        val intent = Intent(this, eve_AddActivity::class.java)
-        intent.putExtra("EVENT_ID", event.id)
-        startActivity(intent)
-    }
+        // Configura el listener para clics en los elementos de la lista
+        lstCustomList.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            val eventId = eventList[position].Id
+            util.openActivity(this, eve_AddActivity::class.java, EXTRA_MESSAGE_ID, eventId)
+        }
 
-    private fun deleteEvent(event: Evento) {
-        AlertDialog.Builder(this)
-            .setTitle("Eliminar Evento")
-            .setMessage("¿Estás seguro de que deseas eliminar el evento '${event.id}'?")
-            .setPositiveButton("Eliminar") { _, _ ->
-                EventoModel.deleteEvent(event.id) // Lógica para eliminar el evento
-                loadEvents()
-                Toast.makeText(this, "Evento eliminado", Toast.LENGTH_SHORT).show()
-            }
-            .setNegativeButton("Cancelar", null)
-            .show()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        loadEvents() // Recargar los eventos al volver
     }
 }

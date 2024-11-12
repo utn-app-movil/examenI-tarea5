@@ -5,7 +5,34 @@
 
 
     <!--Eventos-->
-
+    <string name="eve_AddEvent">Add Event</string>
+    <string name="eve_ListEvent">List Event</string>
+    <string name="eve_msgErrorCaptureImg">Failed Capture Image</string>
+    <string name="eve_msgErrorPickImg">Failed Pick Image</string>
+    <string name="eve_TakePhoto">Add photo of Event</string>
+    <string name="eve_ChooseGallery">Choose Gallery</string>
+    <string name="eve_AddPhoto2">Add Photo</string>
+    <string name="eve_msgCameraPermissionDenied">Camera Permission Denied</string>
+    <string name="eve_msgCameraAppAvailable">Camera App Available</string>
+    <string name="eve_msgSave">Save</string>
+    <string name="eve_msgMissingData">Missing Data</string>
+    <string name="eve_msgDelete">Delete</string>
+    <string name="eve_EventID">Event ID</string>
+    <string name="eve_Institution">Institution</string>
+    <string name="eve_EventLocation">Event Location</string>
+    <string name="eve_DateTime">Date</string>
+    <string name="eve_SeatNumber">Seat Number</string>
+    <string name="eve_EventType">Event Type</string>
+    <string name="eve_FirstName">First Name</string>
+    <string name="eve_LastName">Last Name</string>
+    <string name="eve_Phone">Phone</string>
+    <string name="eve_Email">Email</string>
+    <string name="eve_Address">Address</string>
+    <string name="eve_Country">Country</string>
+    <string name="eve_ImageEvent">Image the Event</string>
+    <string name="eve_mnu_save">Save</string>
+    <string name="eve_mnu_delete">Delete</string>
+    <string name="eve_mnu_cancel">Cancel</string>
 
     <!--Reclutamiento-->
     <!-- RecMainActivity Texts -->
