@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detalles del Correo Electrónico"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <!-- Nuevo ImageView para mostrar la imagen -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:stretchColumns="1" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <!-- Título del correo electrónico -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:paddingEnd="8dp"
+                android:text="@string/EmailTitle"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editDetailTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:elevation="1dp"
+                android:padding="8dp"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <!-- Mensaje del correo electrónico -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:paddingEnd="8dp"
+                android:text="@string/EmailMessage"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editDetailMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:elevation="1dp"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:inputType="textMultiLine"
+                android:gravity="top" />
+        </TableRow>
+
+        <!-- Fecha de envío del correo electrónico -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:paddingEnd="8dp"
+                android:text="@string/EmailSendDate"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editDetailSendDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:elevation="1dp"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:inputType="date" />
+        </TableRow>
+
+        <!-- CC (con copia) del correo electrónico -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:paddingEnd="8dp"
+                android:text="@string/EmailCC"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editDetailCc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:elevation="1dp"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <!-- CCO (con copia oculta) del correo electrónico -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:paddingEnd="8dp"
+                android:text="@string/EmailBCC"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editDetailCco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:elevation="1dp"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/ema_imadetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+</LinearLayout>

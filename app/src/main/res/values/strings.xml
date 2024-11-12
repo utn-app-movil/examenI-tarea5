@@ -488,4 +488,5 @@
     <string name="vul_TakePhoto">Take Photo</string>
     <string name="vul_Gallery">Chose From Gallery</string>
     <string name="vul_NotCamera">Camera is not Available</string>
+
 </resources>

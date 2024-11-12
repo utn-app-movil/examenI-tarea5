@@ -473,4 +473,5 @@
     <string name="vul_TakePhoto">Tomar Foto</string>
     <string name="vul_Gallery">Escoger de Galeria</string>
     <string name="vul_NotCamera">Camara no Disponible</string>
+
 </resources>
