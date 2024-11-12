@@ -60,7 +60,9 @@
 
 
         <!--Inventario-->
-
+             <activity
+            android:name=".InventoryActivity"
+            android:exported="false"/>
 
         <!--Tipo Cambio-->
         <activity
