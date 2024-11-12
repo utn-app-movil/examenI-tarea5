@@ -40,9 +40,9 @@
 
 
         <!--Subasta-->
-        <activity
+      <!--  <activity
             android:name=".subListCustom"
-            android:exported="false" />
+            android:exported="false" /> -->
         <activity
             android:name=".subList"
             android:exported="false" />
@@ -64,8 +64,8 @@
             android:name=".InventoryActivity"
             android:exported="false"/>
 
-        <!--Tipo Cambio-->
-       <activity
+      <!--Tipo Cambio-->
+      <!-- <activity
 <<<<<<< HEAD
             android:name=".InventoryActivity"
             android:exported="false" />
@@ -73,7 +73,7 @@
             android:name=".cap_AddActivity"
 =======
             android:name=".tcam_MainActivity"
-            android:exported="false" />
+            android:exported="false" /> -->
         <activity
             android:name=".tcam_Custom_List_Activity"
             android:exported="false"
@@ -114,10 +114,10 @@
         <activity android:name=".vul_MainActivity" android:exported="false" />
 
         <!--Capacitaciones-->
-        <activity android:name=".cap_AddActivity"
+      <!--  <activity android:name=".cap_AddActivity"
 >>>>>>> 4186f466dd932a7107ad69a6fc5e130fccde3ad1
             android:exported="false"
-            android:parentActivityName=".cap_MainActivity"/>
+            android:parentActivityName=".cap_MainActivity"/> -->
         <activity
             android:name=".cap_ListActivity"
             android:exported="false"

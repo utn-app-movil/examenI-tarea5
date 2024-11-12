@@ -61,15 +61,18 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Para RecyclerView
+=======
+
+>>>>>>> b74727a1950c15d48a109ac7f7811ffbb1d1aeeb
     implementation (libs.androidx.recyclerview)
-
-    // Para Button y otras vistas estándar
     implementation (libs.androidx.appcompat)
-
-    // Para ConstraintLayout
     implementation (libs.androidx.constraintlayout)
+<<<<<<< HEAD
 =======
 >>>>>>> 4186f466dd932a7107ad69a6fc5e130fccde3ad1
+=======
+>>>>>>> b74727a1950c15d48a109ac7f7811ffbb1d1aeeb
 
 }
