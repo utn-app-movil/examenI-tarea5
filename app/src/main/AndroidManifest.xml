@@ -84,6 +84,19 @@
             android:name=".ema_listEmail"
             android:exported="false" />
         <activity
+            android:name=".cit_DataStore"
+            android:exported="false" />
+        <activity
+            android:name=".cit_RegisterInformation"
+            android:exported="false" />
+        <activity
+            android:name=".cit_DeleteInformation"
+            android:exported="false" />
+        <activity
+            android:name=".cit_ModifyInformation"
+            android:exported="false" />
+        <activity
+            android:name=".bib_Lista"
             android:name=".ema_EmailActivity"
             android:exported="false" />
         <activity
