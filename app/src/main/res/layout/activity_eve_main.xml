@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FF9800"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="16dp">
-
-    <!-- Botón para agregar un evento -->
-
-    <!-- Botón para ver eventos -->
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="#FF9800"
-        android:text="Agregar Evento"
-        android:textColor="@android:color/white" />
+    tools:context=".eve_MainActivity">
 
     <Button
-        android:id="@+id/btnView"
+        android:id="@+id/eve_btnAddEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="#FF9800"
-        android:text="Ver Eventos"
-        android:textColor="@android:color/white" />
-</LinearLayout>
+        android:text="@string/eve_AddEvent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <Button
+        android:id="@+id/eve_btnListEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eve_ListEvent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eve_btnAddEvent"
+        app:layout_constraintVertical_bias="0.215" />
+</androidx.constraintlayout.widget.ConstraintLayout>
