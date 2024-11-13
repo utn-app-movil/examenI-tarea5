@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "cr.ac.utn.movil"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "cr.ac.utn.movil"
@@ -42,6 +42,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.ui.graphics.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

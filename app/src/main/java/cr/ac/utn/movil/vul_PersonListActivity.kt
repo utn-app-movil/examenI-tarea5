@@ -1,16 +1,15 @@
 package cr.ac.utn.movil
 
-import cr.ac.utn.appmovil.util.util
-import cr.ac.utn.appmovil.util.EXTRA_MESSAGE_ID
+import Adapters.vul_PersonListAdapter
 import android.os.Bundle
 import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import cr.ac.utn.movil.R
+import cr.ac.utn.appmovil.util.EXTRA_MESSAGE_ID
+import cr.ac.utn.appmovil.util.util
 import model.vul_PersonModel
 
 class vul_PersonListActivity : AppCompatActivity() {
@@ -24,19 +23,16 @@ class vul_PersonListActivity : AppCompatActivity() {
             insets
         }
 
-        val personModel = vul_PersonModel(this)
-        val lstPerson = findViewById<ListView>(R.id.lstPersonList)
-        val adapter = ArrayAdapter(this,
-            android.R.layout.simple_list_item_1,
-            personModel.getPersons())
+        var personModel = vul_PersonModel(this)
+        val lstCustomList = findViewById<ListView>(R.id.lstPersonList)
+        var personList = personModel.getPersons()
 
-        lstPerson.adapter = adapter
+        val adapter = vul_PersonListAdapter (this, R.layout.vul_person_item_list, personList)
+        lstCustomList.adapter = adapter
 
-        lstPerson.onItemClickListener = AdapterView.OnItemClickListener{
-                parent, view, position, id ->
-            val itemValue = lstPerson.getItemAtPosition(position) as String
-            util.openActivity(this, vul_PersonActivity::class.java
-                , EXTRA_MESSAGE_ID, itemValue)
+        lstCustomList.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            val personId = personList[position].Id
+            util.openActivity(this, cap_AddActivity::class.java, EXTRA_MESSAGE_ID, personId)
         }
     }
 }

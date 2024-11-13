@@ -49,9 +49,6 @@
 
         <!--Subasta-->
         <activity
-            android:name=".subListCustom"
-            android:exported="false" />
-        <activity
             android:name=".subList"
             android:exported="false" />
 

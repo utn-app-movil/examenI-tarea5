@@ -8,11 +8,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import cr.ac.utn.appmovil.vuelos.vul_Person
 import model.vul_PersonModel
 import cr.ac.utn.appmovil.util.util
 import cr.ac.utn.appmovil.util.EXTRA_MESSAGE_ID
 import cr.ac.utn.movil.R
+import identities.vul_Person
 
 class vul_CustomListActivity : AppCompatActivity() {
     lateinit var personModel: vul_PersonModel
