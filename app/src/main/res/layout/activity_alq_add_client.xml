@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alq_AddClientActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro de Alquiler"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/alq_nombre_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Cliente" />
+
+            <EditText
+                android:id="@+id/alq_apellido_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido del Cliente" />
+
+            <Spinner
+                android:id="@+id/alq_tipo_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/tipos_de_vehiculo" />
+
+            <EditText
+                android:id="@+id/placa_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Placa del Vehículo" />
+
+            <EditText
+                android:id="@+id/alq_kilometraje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kilometraje" />
+
+            <EditText
+                android:id="@+id/alq_licencia_conductor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Licencia del Conductor" />
+
+            <Button
+                android:id="@+id/alq_guardar_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/alq_cancelar_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+            <ImageView
+                android:id="@+id/alq_reservation_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_placeholder_image" />
+
+            <!-- Botón para seleccionar o tomar foto -->
+            <Button
+                android:id="@+id/alq_btn_select_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="48dp"
+                android:text="Select Photo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
